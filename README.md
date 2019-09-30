@@ -15,3 +15,7 @@ The Cats Adventures. A Point-and-Click Game, using AGS framework
 
 1. Screeen size 1024x768 
 2. Button zone: 1/3 (256 px)
+
+# text encoding: windows1250 (to get the special spanish chars)
+
+* use thimbleweed theme
