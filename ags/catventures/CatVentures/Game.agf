@@ -3152,6 +3152,16 @@
                   </Sprite>
                 </Sprites>
               </SpriteFolder>
+              <SpriteFolder Name="room1">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="48" Width="36" Height="133" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>D:\dev\CatVentures\assets\sprites\room1\door2_o.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
             <Sprites>
               <Sprite Slot="51" Width="320" Height="42" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
