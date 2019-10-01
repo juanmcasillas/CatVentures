@@ -922,7 +922,7 @@
           </GUIMain>
           <GUIMain>
             <NormalGUI>
-              <OnClick />
+              <OnClick>gAction_OnClick</OnClick>
               <Height>200</Height>
               <Width>320</Width>
               <Left>0</Left>
@@ -1993,6 +1993,125 @@
               </GUILabel>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>200</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>False</Clickable>
+              <Visibility>Persistent</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>8</ID>
+              <Name>gPlayers</Name>
+            </NormalGUI>
+            <Controls>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Font>0</Font>
+                <Text />
+                <Height>10</Height>
+                <Locked>False</Locked>
+                <Width>100</Width>
+                <Left>89</Left>
+                <Top>0</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>lblPlayers</Name>
+              </GUILabel>
+              <GUIButton>
+                <OnClick>btnPlayer1_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopMiddle</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>44</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>19</Height>
+                <Locked>False</Locked>
+                <Width>20</Width>
+                <Left>0</Left>
+                <Top>0</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>btnPlayer1</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopMiddle</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>43</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>19</Height>
+                <Locked>False</Locked>
+                <Width>20</Width>
+                <Left>21</Left>
+                <Top>0</Top>
+                <ZOrder>2</ZOrder>
+                <ID>2</ID>
+                <Name>btnPlayer2</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopMiddle</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>43</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>19</Height>
+                <Locked>False</Locked>
+                <Width>20</Width>
+                <Left>42</Left>
+                <Top>0</Top>
+                <ZOrder>3</ZOrder>
+                <ID>3</ID>
+                <Name>btnPlayer3</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopMiddle</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>43</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>19</Height>
+                <Locked>False</Locked>
+                <Width>20</Width>
+                <Left>63</Left>
+                <Top>0</Top>
+                <ZOrder>4</ZOrder>
+                <ID>4</ID>
+                <Name>btnPlayer4</Name>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -3003,6 +3122,36 @@
                   <Sprite Slot="212" Width="56" Height="12" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
                 </Sprites>
               </SpriteFolder>
+              <SpriteFolder Name="Players">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="43" Width="20" Height="19" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>D:\dev\CatVentures\assets\icons\icon_button_no.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="44" Width="20" Height="19" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>D:\dev\CatVentures\assets\icons\icon_button1.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="45" Width="20" Height="19" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>D:\dev\CatVentures\assets\icons\icon_button2.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="46" Width="20" Height="19" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>D:\dev\CatVentures\assets\icons\icon_button3.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="47" Width="20" Height="19" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>D:\dev\CatVentures\assets\icons\icon_button4.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
             <Sprites>
               <Sprite Slot="51" Width="320" Height="42" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
@@ -3046,11 +3195,6 @@
           <Sprite Slot="79" Width="8" Height="8" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
             <Source>
               <FileName>assets/gui/item_cup.png</FileName>
-            </Source>
-          </Sprite>
-          <Sprite Slot="118" Width="33" Height="48" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
-            <Source>
-              <FileName>assets/room2_door.png</FileName>
             </Source>
           </Sprite>
         </Sprites>
