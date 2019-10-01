@@ -1,0 +1,748 @@
+// AGS TRANSLATION SOURCE FILE
+// Format is alternating lines with original game text and replacement
+// text. If you don't want to translate a line, just leave the following
+// line blank. Lines starting with '//' are comments - DO NOT translate
+// them. Special characters such as [ and %%s symbolise things within the
+// game, so should be left in an appropriate place in the message.
+// 
+// ** Translation settings are below
+// ** Leave them as "DEFAULT" to use the game settings
+// The normal font to use - DEFAULT or font number
+//#NormalFont=DEFAULT
+// The speech font to use - DEFAULT or font number
+//#SpeechFont=DEFAULT
+// Text direction - DEFAULT, LEFT or RIGHT
+//#TextDirection=DEFAULT
+//  
+// ** REMEMBER, WRITE YOUR TRANSLATION IN THE EMPTY LINES, DO
+// ** NOT CHANGE THE EXISTING TEXT.
+Greetings!
+
+Who are you?
+
+How did that happen?
+
+How can I leave this room?
+
+Take care.
+
+Greetings to you too.
+
+I am you. From the past.
+
+As a hologram.
+
+Cool. How did that happen?
+
+Please don't ask.
+
+This is hardly a demo game. You may decide it and make a proper game about it.
+
+Now that you remind me. There is something I need to tell you.
+
+And that is?
+
+Take a closer look at your cup.
+
+Oh, you didn't pick it up from the first room.
+
+Let me teleport it to your pocket then.
+
+Ouch. Please do not teleport stuff in my pockets again.
+
+You already have the keycard. Just use it on the door.
+
+Thanks.
+
+See you around.
+
+%d.
+
+This button is not part of the Tumbleweed verbs GUI
+
+Could not find the action corresonding to this button.
+
+Gehe zu %s
+
+Schau %s an
+
+Rede mit %s
+
+Gib !s an %s
+
+Gib %s
+
+Nimm %s
+
+Benutze !s mit %s
+
+Benutze %s
+
+ï¿½ffne %s
+
+Schlieï¿½e %s
+
+Drï¿½cke %s
+
+Ziehe %s
+
+Ir a %s
+
+Mirar %s
+
+Hablar con %s
+
+Dar !s a %s
+
+Dar %s
+
+Coger %s
+
+Usar !s con %s
+
+Usar %s
+
+Abrir %s
+
+Cerrar %s
+
+Empujar %s
+
+Tirar de %s
+
+Aller vers %s
+
+Regarder %s
+
+Parler ï¿½ %s
+
+Donner !s ï¿½ %s
+
+Donner %s
+
+Prendre %s
+
+Utiliser !s sur %s
+
+Utiliser %s
+
+Ouvrir %s
+
+Fermer %s
+
+Pousser %s
+
+Tirer %s
+
+Vai a %s
+
+Esamina %s
+
+Parla con %s
+
+Dai !s a %s
+
+Dai %s
+
+Raccogli %s
+
+Usa !s con %s
+
+Usa %s
+
+Apri %s
+
+Ferma %s
+
+Premi %s
+
+Tira %s
+
+Ir para %s
+
+Olhar para %s
+
+Falar com %s
+
+Apanhar %s
+
+Usar !s com %s
+
+Fechar %s
+
+Empurrar %s
+
+Puxar %s
+
+Ga naar %s
+
+Bekijk %s
+
+Praat met %s
+
+Geef !s aan %s
+
+Geef %s
+
+Pak %s
+
+Gebruik !s met %s
+
+Gebruik %s
+
+Open %s
+
+Sluit %s
+
+Duw %s
+
+Trek %s
+
+Walk to %s
+
+Look at %s
+
+Talk to %s
+
+Give !s to %s
+
+Give %s
+
+Pick up %s
+
+Use !s with %s
+
+Use %s
+
+Close %s
+
+Push %s
+
+Pull %s
+
+!s
+
+%s
+
+>
+
+>n
+
+This button is not part of the Verbs GUI.
+
+%c
+
+Options
+
+Music Volume
+
+Sound Effects Volume
+
+Layout
+
+Classic
+
+Modern
+
+Default
+
+Save
+
+Load
+
+Quit
+
+Resume
+
+Game Paused
+
+Press <SPACE> to continue
+
+Cancel
+
+Quit Game
+
+Are you sure you want to quit?
+
+Yes
+
+No
+
+Optionen
+
+Musik Lautstï¿½rke
+
+Sound Effekte
+
+Bedienung
+
+Klassisch
+
+Standard
+
+Speichern
+
+Laden
+
+Beenden
+
+Weiter
+
+Pause
+
+Leertaste fï¿½r weiter
+
+Spielstand laden
+
+Abbruch
+
+Spielstand speichern
+
+Spiel verlassen
+
+Mï¿½chten Sie das Spiel beenden?
+
+Ja
+
+Nein
+
+Opciones
+
+Volumen de la mï¿½sica
+
+Efectos de sonido 
+
+Diseï¿½o
+
+clï¿½sico
+
+moderno
+
+Restablecer
+
+Guardar
+
+Cargar
+
+Salir
+
+Volver
+
+Pausa
+
+Pulsa Espacio para continuar
+
+Por favor, elige el juego a cargar
+
+Cancelar
+
+Por favor, introduce un nombre
+
+ï¿½Salir del juego?
+
+ï¿½Seguro que quieres salir?
+
+Si
+
+Paramï¿½tres
+
+Volume de la musique
+
+Volume des sons
+
+Style
+
+classique
+
+moderne
+
+Rï¿½initialiser
+
+Sauver
+
+Charger
+
+Quitter
+
+Reprendre
+
+Appuyez sur la barre d'espacement pour reprendre
+
+Choisissez une partie ï¿½ charger
+
+Annuler
+
+Saisissez un nom
+
+Voulez-vous vraiment quitter?
+
+Oui
+
+Opzioni
+
+Volume della Musica
+
+Effetti Sonori
+
+Disposizione
+
+classica
+
+moderna
+
+Risedersi
+
+Salva
+
+Carica
+
+Esci
+
+Continua
+
+Partita in Pausa
+
+Premi Spazio per Continuare
+
+Scegli una partita da caricare
+
+Cancella
+
+Inserisci un nome
+
+Uscire dal gioco
+
+Sei sicuro/a che vuoi uscire?
+
+Opï¿½ï¿½es
+
+Volume Mï¿½sica
+
+Efeitos Sonoros
+
+Disposiï¿½ï¿½o
+
+clï¿½ssica
+
+Gravar
+
+Restaurar
+
+Desistir
+
+Continuar
+
+Prima Space para continuar
+
+Por favor escolha um jogo
+
+Por favor insira um nome
+
+De certeza que quer desistir?
+
+Opties
+
+Muziek Volume
+
+Geluidseffecten
+
+Bediening
+
+klassiek
+
+modern
+
+Standaard
+
+Opslaan
+
+Stop
+
+Ga door
+
+Pauze
+
+Druk op de Spatiebalk om door te gaan
+
+Kies a.u.b. een spel om te laden
+
+Annuleren
+
+Vul a.u.b. een naam in
+
+Sluit spel af
+
+Weet u zeker dat u wilt stoppen?
+
+Nee
+
+%dm
+
+%dh %dm
+
+%s;%04d/%02d/%02d %02d:%02d
+
+;
+
+I can't use that.
+
+That won't do any good.
+
+Nice %s
+
+It's %s
+
+I can't push that.
+
+I can't push %s
+
+I can't pull that.
+
+I can't pull %s
+
+It has already been closed.
+
+Doing that with %s is not a good idea.
+
+I can't close that.
+
+It is open.
+
+%s would not like it.
+
+I can't open that.
+
+I don't need that.
+
+I don't want to pick %s up.
+
+I have nothing to say.
+
+I don't want to talk to %s.
+
+I'd rather keep it.
+
+I can't do that.
+
+The door looks solid.
+
+It is locked.
+
+I can't unlock it with that.
+
+I have to close it first.
+
+Now it's unlocked.
+
+The door is locked again.
+
+GUI_LANGUAGE
+ES
+de
+
+es
+
+fr
+
+en
+
+it
+
+scrnshot.pcx
+
+Let's spill the liquid and have a look.
+
+Voilï¿½, I found a keycard.
+
+It is a blue cup, filled with liquid.
+
+I could swear that there is tiny object shimmering on the ground.
+
+It is an empty cup.
+
+It is a massive key card. I wonder how it fit in the cup.
+
+Do you want this?
+
+I have no pockets.
+
+A hologram has no pockets.
+
+New Button
+
+Nothing
+
+Roger
+
+the Hologram
+
+Blue Cup>u
+
+Empty Cup
+
+KeyCard
+
+That's it. There is nothing more to do!
+
+It's a blue cup.
+
+I'd rather pick it up.
+
+It might break.
+
+How could I ever leave you there.
+
+Hotspot 0
+
+the Holodeck>ed
+
+Hotspot 2
+
+Hotspot 3
+
+Hotspot 4
+
+Hotspot 5
+
+Hotspot 6
+
+Hotspot 7
+
+Hotspot 8
+
+Hotspot 9
+
+Hotspot 10
+
+Hotspot 11
+
+Hotspot 12
+
+Hotspot 13
+
+Hotspot 14
+
+Hotspot 15
+
+Hotspot 16
+
+Hotspot 17
+
+Hotspot 18
+
+Hotspot 19
+
+Hotspot 20
+
+Hotspot 21
+
+Hotspot 22
+
+Hotspot 23
+
+Hotspot 24
+
+Hotspot 25
+
+Hotspot 26
+
+Hotspot 27
+
+Hotspot 28
+
+Hotspot 29
+
+Hotspot 30
+
+Hotspot 31
+
+Hotspot 32
+
+Hotspot 33
+
+Hotspot 34
+
+Hotspot 35
+
+Hotspot 36
+
+Hotspot 37
+
+Hotspot 38
+
+Hotspot 39
+
+Hotspot 40
+
+Hotspot 41
+
+Hotspot 42
+
+Hotspot 43
+
+Hotspot 44
+
+Hotspot 45
+
+Hotspot 46
+
+Hotspot 47
+
+Hotspot 48
+
+Hotspot 49
+
+Blue Cup>p
+
+It is a projector for the holographic illusions and a vanishing point.
+
+No hotspot
+
+Holodoor>v
+
+Projector
+
+Holodoor>o
+
+Öffne %s
+
+Schließe %s
+
+Drücke %s
+
+Parler à %s
+
+Donner !s à %s
+
+Musik Lautstärke
+
+Leertaste für weiter
+
+Möchten Sie das Spiel beenden?
+
+Volumen de la música
+
+Diseño
+
+clásico
+
+¿Salir del juego?
+
+¿Seguro que quieres salir?
+
+Paramètres
+
+Réinitialiser
+
+Choisissez une partie à charger
+
+Opções
+
+Volume Música
+
+Disposição
+
+clássica
+
+Voilà, I found a keycard.
+
