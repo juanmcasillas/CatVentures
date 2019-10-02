@@ -36,6 +36,7 @@
 // The following constant definitions are used to modify the behavior
 // of this module.  
 //-------------------------------------------------------------------
+#define CAT_DEBUG 1
 
 #define CAT_PLAYER1_NAME		"Firulais"
 #define CAT_PLAYER2_NAME		"Calcetines"
@@ -77,6 +78,7 @@ struct PlayerInfo {
 	int idle_view[5];
 	int enabled_icon;
 	int disabled_icon;
+  bool added;
 	Button *button;
 	Character *character;
 };

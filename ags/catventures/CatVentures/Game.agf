@@ -2772,10 +2772,8 @@ Calcetines: Try to push some things, maybe it opens.
 option-off 4
 return
 @5
-Calcetines: for sure. Deal.
-  CatGame.AddPlayer(CAT_PLAYER2_ID); // be friends
-option-off-forever 5
-return
+Calcetines: I think so
+goto-dialog dDialog2
 @6
 Calcetines: Take care.
   cCalcetines.ChangeView(2); // sleep again
@@ -2808,13 +2806,55 @@ stop
               </DialogOption>
               <DialogOption>
                 <ID>5</ID>
-                <Text xml:space="preserve">Do you wanna be my friend?</Text>
+                <Text xml:space="preserve">I think some strange happens here</Text>
                 <Show>True</Show>
                 <Say>True</Say>
               </DialogOption>
               <DialogOption>
                 <ID>6</ID>
                 <Text xml:space="preserve">I have things to do. See you later.</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>1</ID>
+            <Name>dDialog2</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+return
+@1
+Calcetines: Technically, we can.
+Calcetines: The strange thing is that we can talk as humans!
+return
+@2
+Calcetines: for sure. Deal.
+  CatGame.AddPlayer(CAT_PLAYER2_ID); // be friends
+option-off-forever 2
+goto-previous
+@3
+Calcetines: This looks like this game is still on development.
+Calcetines: suspicious.
+goto-previous
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text xml:space="preserve">We can talk!</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text xml:space="preserve">Do you wanna be my friend?</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text xml:space="preserve">This house looks like a TV set, isn't it?</Text>
                 <Show>True</Show>
                 <Say>True</Say>
               </DialogOption>
@@ -3566,9 +3606,9 @@ stop
                   </Sprite>
                   <Sprite Slot="25" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
                       <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <OffsetY>64</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3578,9 +3618,9 @@ stop
                   </Sprite>
                   <Sprite Slot="26" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
+                      <OffsetX>64</OffsetX>
+                      <OffsetY>64</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3590,9 +3630,9 @@ stop
                   </Sprite>
                   <Sprite Slot="27" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
+                      <OffsetX>128</OffsetX>
+                      <OffsetY>64</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3602,9 +3642,9 @@ stop
                   </Sprite>
                   <Sprite Slot="28" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
                       <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <OffsetY>128</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3614,9 +3654,9 @@ stop
                   </Sprite>
                   <Sprite Slot="29" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
+                      <OffsetX>64</OffsetX>
+                      <OffsetY>128</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3626,9 +3666,9 @@ stop
                   </Sprite>
                   <Sprite Slot="30" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
+                      <OffsetX>128</OffsetX>
+                      <OffsetY>128</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3650,9 +3690,9 @@ stop
                   </Sprite>
                   <Sprite Slot="32" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
+                      <OffsetX>64</OffsetX>
+                      <OffsetY>192</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3662,9 +3702,9 @@ stop
                   </Sprite>
                   <Sprite Slot="33" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
+                      <OffsetX>128</OffsetX>
+                      <OffsetY>192</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3674,9 +3714,9 @@ stop
                   </Sprite>
                   <Sprite Slot="34" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
                       <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <OffsetY>256</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3686,9 +3726,9 @@ stop
                   </Sprite>
                   <Sprite Slot="35" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
+                      <OffsetX>64</OffsetX>
+                      <OffsetY>256</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3698,9 +3738,9 @@ stop
                   </Sprite>
                   <Sprite Slot="36" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
+                      <OffsetX>128</OffsetX>
+                      <OffsetY>256</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3722,9 +3762,9 @@ stop
                   </Sprite>
                   <Sprite Slot="38" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
+                      <OffsetX>64</OffsetX>
+                      <OffsetY>320</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
@@ -3734,9 +3774,9 @@ stop
                   </Sprite>
                   <Sprite Slot="39" Width="64" Height="64" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName />
-                      <OffsetX>0</OffsetX>
-                      <OffsetY>0</OffsetY>
+                      <FileName>D:\dev\CatVentures\assets\sprites\sprite_calcetines_2x.png</FileName>
+                      <OffsetX>128</OffsetX>
+                      <OffsetY>320</OffsetY>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
                       <RemapToRoomPalette>False</RemapToRoomPalette>
