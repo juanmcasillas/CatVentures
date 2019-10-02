@@ -42,10 +42,15 @@
 #define CAT_PLAYER3_NAME		"Miki"
 #define CAT_PLAYER4_NAME		"Trufa"
 
+#define CAT_PLAYER1_ID		0
+#define CAT_PLAYER2_ID		1
+#define CAT_PLAYER3_ID    2
+#define CAT_PLAYER4_ID    3
+
 #define CAT_DISABLED_ICON		121
 #define CAT_FIRULAIS_ICON		213
-#define CAT_CALCETINES_ICON		214
-#define CAT_MIKI_ICON			215
+#define CAT_CALCETINES_ICON	214
+#define CAT_MIKI_ICON			  215
 #define CAT_TRUFA_ICON			216		
 
 #define CAT_NUM_PLAYERS         4
@@ -87,7 +92,8 @@ struct CatVentures {
 
 	// Public Data
 	//int VariableName;
-
+  bool playersGUIEnabled;
+  int playersRunning;
 	// Public Static Methods
 	//import static function FunctionNameStatic ();
 
@@ -96,13 +102,11 @@ struct CatVentures {
 
 	import static void Init();
 	import int PlayerToID(String Player);
-	import int NormalView (String Player, int what = 0);
-	import int IdleView (String Player, int what = 0);
-	import int EnabledIcon (String Player);
-	import int DisabledIcon (String Player);
 	import void ChangePlayer (Character * c);
+  import void AddPlayer(int playerID);
 
-
+  import void EnablePlayersGUI();
+  import void DisablePlayersGUI();
 	// Private Data
 	//protected int variable_name_protected;
 

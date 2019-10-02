@@ -652,6 +652,10 @@
             <Number>3</Number>
             <Description>Goal</Description>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>4</Number>
+            <Description>Intro</Description>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2528,7 +2532,7 @@
             <IdleView>4</IdleView>
             <ThinkingView>8</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>1</StartingRoom>
+            <StartingRoom>4</StartingRoom>
             <StartX>252</StartX>
             <StartY>156</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -2733,15 +2737,16 @@
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-  btnPlayer2.Visible = true;
 return
 @1
 Calcetines: it's sunny and clear. As always.
 Firulais: you're the joy of the vegetable garden.
+option-off-forever 1
 return
 @2
 Calcetines: sleeping, as ususal.
 Firulais: I'm hungry.
+//Narrator: eh eh
 Calcetines: Try to steal something.
 return
 @3
@@ -2760,12 +2765,20 @@ Firulais: Behind you!
   cCalcetines.FaceCharacter(cFirulais);
  
 Calcetines: You're pulling my leg. Not funny.
+option-off 3
 return
 @4
+Calcetines: Try to push some things, maybe it opens.
+option-off 4
 return
 @5
+Calcetines: for sure. Deal.
+  CatGame.AddPlayer(CAT_PLAYER2_ID); // be friends
+option-off-forever 5
+return
+@6
 Calcetines: Take care.
-  cCalcetines.ChangeView(2);
+  cCalcetines.ChangeView(2); // sleep again
 stop
 ]]></Script>
             <DialogOptions>
@@ -2795,7 +2808,13 @@ stop
               </DialogOption>
               <DialogOption>
                 <ID>5</ID>
-                <Text xml:space="preserve">I have things to do. We talk later</Text>
+                <Text xml:space="preserve">Do you wanna be my friend?</Text>
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>6</ID>
+                <Text xml:space="preserve">I have things to do. See you later.</Text>
                 <Show>True</Show>
                 <Say>True</Say>
               </DialogOption>
@@ -5834,6 +5853,47 @@ stop
                       <RemapToRoomPalette>False</RemapToRoomPalette>
                       <ImportMethod>TopLeft</ImportMethod>
                       <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="intro">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="43" Width="152" Height="68" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>D:\dev\CatVentures\assets\sprites\logo.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="44" Width="109" Height="47" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>D:\dev\CatVentures\assets\sprites\nonfree\cloud.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="45" Width="320" Height="200" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\dev\CatVentures\assets\rooms\intro.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>False</ImportAlphaChannel>
                     </Source>
                   </Sprite>
                 </Sprites>
