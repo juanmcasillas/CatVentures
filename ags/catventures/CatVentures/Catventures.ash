@@ -15,6 +15,9 @@
 // required module is not installed. There should be a definition for
 // the current version and all previous compatiable versions. 
 //-------------------------------------------------------------------
+
+#define __CATVENTURES_MODULE__ 
+
 // Define this module's version info
 #define CatVentures_VERSION 0100
 #define CatVentures_VERSION_0100
@@ -45,13 +48,13 @@
 
 #define CAT_PLAYER1_ID		0
 #define CAT_PLAYER2_ID		1
-#define CAT_PLAYER3_ID    2
-#define CAT_PLAYER4_ID    3
+#define CAT_PLAYER3_ID      2
+#define CAT_PLAYER4_ID      3
 
 #define CAT_DISABLED_ICON		121
 #define CAT_FIRULAIS_ICON		213
-#define CAT_CALCETINES_ICON	214
-#define CAT_MIKI_ICON			  215
+#define CAT_CALCETINES_ICON	    214
+#define CAT_MIKI_ICON			215
 #define CAT_TRUFA_ICON			216		
 
 #define CAT_NUM_PLAYERS         4

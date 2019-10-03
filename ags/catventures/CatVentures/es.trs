@@ -16,45 +16,55 @@
 //  
 // ** REMEMBER, WRITE YOUR TRANSLATION IN THE EMPTY LINES, DO
 // ** NOT CHANGE THE EXISTING TEXT.
-Greetings!
+What a good day!
 
-Who are you?
+What are you doing
 
-How did that happen?
+Hey see there, a three-headed monkey
 
-How can I leave this room?
+Btw, I can't open door, any ideas?
+
+I think some strange happens here
+
+I have things to do. See you later.
+
+it's sunny and clear. As always.
+
+you're the joy of the vegetable garden.
+
+sleeping, as ususal.
+
+I'm hungry.
+
+Try to steal something.
+
+Where?
+
+Behind you!
+
+You're pulling my leg. Not funny.
+
+Try to push some things, maybe it opens.
+
+I think so
 
 Take care.
 
-Greetings to you too.
+We can talk!
 
-I am you. From the past.
+Do you wanna be my friend?
 
-As a hologram.
+This house looks like a TV set, isn't it?
 
-Cool. How did that happen?
+Technically, we can.
 
-Please don't ask.
+The strange thing is that we can talk as humans!
 
-This is hardly a demo game. You may decide it and make a proper game about it.
+for sure. Deal.
 
-Now that you remind me. There is something I need to tell you.
+This looks like this game is still on development.
 
-And that is?
-
-Take a closer look at your cup.
-
-Oh, you didn't pick it up from the first room.
-
-Let me teleport it to your pocket then.
-
-Ouch. Please do not teleport stuff in my pockets again.
-
-You already have the keycard. Just use it on the door.
-
-Thanks.
-
-See you around.
+suspicious.
 
 %d.
 
@@ -78,11 +88,11 @@ Benutze !s mit %s
 
 Benutze %s
 
-ï¿½ffne %s
+Öffne %s
 
-Schlieï¿½e %s
+Schließe %s
 
-Drï¿½cke %s
+Drücke %s
 
 Ziehe %s
 
@@ -114,9 +124,9 @@ Aller vers %s
 
 Regarder %s
 
-Parler ï¿½ %s
+Parler à %s
 
-Donner !s ï¿½ %s
+Donner !s à %s
 
 Donner %s
 
@@ -270,7 +280,7 @@ No
 
 Optionen
 
-Musik Lautstï¿½rke
+Musik Lautstärke
 
 Sound Effekte
 
@@ -290,7 +300,7 @@ Weiter
 
 Pause
 
-Leertaste fï¿½r weiter
+Leertaste für weiter
 
 Spielstand laden
 
@@ -300,7 +310,7 @@ Spielstand speichern
 
 Spiel verlassen
 
-Mï¿½chten Sie das Spiel beenden?
+Möchten Sie das Spiel beenden?
 
 Ja
 
@@ -308,13 +318,13 @@ Nein
 
 Opciones
 
-Volumen de la mï¿½sica
+Volumen de la música
 
 Efectos de sonido 
 
-Diseï¿½o
+Diseño
 
-clï¿½sico
+clásico
 
 moderno
 
@@ -338,13 +348,13 @@ Cancelar
 
 Por favor, introduce un nombre
 
-ï¿½Salir del juego?
+¿Salir del juego?
 
-ï¿½Seguro que quieres salir?
+¿Seguro que quieres salir?
 
 Si
 
-Paramï¿½tres
+Paramètres
 
 Volume de la musique
 
@@ -356,7 +366,7 @@ classique
 
 moderne
 
-Rï¿½initialiser
+Réinitialiser
 
 Sauver
 
@@ -368,7 +378,7 @@ Reprendre
 
 Appuyez sur la barre d'espacement pour reprendre
 
-Choisissez une partie ï¿½ charger
+Choisissez une partie à charger
 
 Annuler
 
@@ -390,7 +400,7 @@ classica
 
 moderna
 
-Risedersi
+Predefinite
 
 Salva
 
@@ -414,15 +424,15 @@ Uscire dal gioco
 
 Sei sicuro/a che vuoi uscire?
 
-Opï¿½ï¿½es
+Opções
 
-Volume Mï¿½sica
+Volume Música
 
 Efeitos Sonoros
 
-Disposiï¿½ï¿½o
+Disposição
 
-clï¿½ssica
+clássica
 
 Gravar
 
@@ -537,7 +547,7 @@ Now it's unlocked.
 The door is locked again.
 
 GUI_LANGUAGE
-ES
+es
 de
 
 es
@@ -548,62 +558,48 @@ en
 
 it
 
+nl
+
+pt
+
+Trying to add player %d twice. ¿bug?
+
 scrnshot.pcx
 
-Let's spill the liquid and have a look.
-
-Voilï¿½, I found a keycard.
-
-It is a blue cup, filled with liquid.
-
-I could swear that there is tiny object shimmering on the ground.
-
-It is an empty cup.
-
-It is a massive key card. I wonder how it fit in the cup.
-
-Do you want this?
-
-I have no pockets.
-
-A hologram has no pockets.
+Giving all the players
 
 New Button
 
 Nothing
 
-Roger
+Firulais
 
-the Hologram
+Calcetines
 
-Blue Cup>u
+3 head monkey
 
-Empty Cup
+Miki
 
-KeyCard
+Trufa
 
-That's it. There is nothing more to do!
+New inventory item
 
-It's a blue cup.
+It's a picture of a very familiar cat.
+El gato del cuadro me resulta muy conocido.
+The door sounds. Maybe it has been unlocked
+La puerta ha hecho un ruido. Lo mismo se ha abierto
+No hotspot
 
-I'd rather pick it up.
-
-It might break.
-
-How could I ever leave you there.
-
-Hotspot 0
-
-the Holodeck>ed
-
-Hotspot 2
-
-Hotspot 3
-
-Hotspot 4
-
-Hotspot 5
-
+Backyard's views
+Vistas al patio
+door
+puerta
+door>o
+puerta>o
+Cat's Picture
+Retrato de un gato
+Cat's picture
+Retrato de un gato
 Hotspot 6
 
 Hotspot 7
@@ -692,57 +688,87 @@ Hotspot 48
 
 Hotspot 49
 
-Blue Cup>p
+Door2 Open
 
-It is a projector for the holographic illusions and a vanishing point.
+Sailor's picture
+Cuadro de un marinero
+Outdoor views
+Vistas a la sierra
+Dull plant
+Planta insulsa
+Family's portrait
+Retrato de Familia
+The Castle
+El Castillo
+Backyard's view
+Vistas al patio
+Hotspot 4
 
-No hotspot
+Hotspot 5
 
-Holodoor>v
+In the deep of the mountain
+En el centro de la sierra
+A very quiet town
+Un pueblo muy tranquilo
+TM & (c) 2019 Juan M. \"assman\" Casillas Games.
 
-Projector
+All rights reserved.
+Todos los derechos reservados.
+Created and Designed by
+Creado y Diseñado por
+Juan M. \"assman\" Casillas
 
-Holodoor>o
+Written and programmed by
+Escrito y programado por
+Background art by
+Decorados por
+Juan M. \"assman\" Casillas (and Internet)
 
-Öffne %s
+Animation by
+Animación por
+Juan M. \"assman\" Casillas (and...Internet)
 
-Schließe %s
+256 Color art by Juan M. \"assman\" Casillas
+Gráficos en 256 colores por Juan M. \"assman\" Casillas
+(ey, just me working here!)
+(eh, que aquí solo trabajo yo!)
+Original Music by
+Música Original por
+Juan M. \"assman\" Casillas...
 
-Drücke %s
+...if I learn to play
+...si es que aprendo a tocar
+the damn ukelele...
+el dichoso ukelele...
+Lead testing by
+Pruebas por
+(what? tests? what tests?)
+(¿como? ¿pruebas? ¿que pruebas?)
+... I should created lot of tests
+... Debería haber probado bien
+but if it compiles, it works!
+pero si compila, funciona!
+Produced by
+Producido por
+*your money here*
+*tu dinero aquí*
+\"SCUMM\" Story system by
+Sistema de Historia \"SCUMM\" por
+Ron Gilbert (aka the Master)
+Ron Gilbert (el Maestro)
+Developed in AGS (c) Chris Jones
+Desarrollado en AGS (c) Chris Jones
+https://www.adventuregamestudio.co.uk
 
-Parler à %s
+Hotspot 1
 
-Donner !s à %s
+Hotspot 2
 
-Musik Lautstärke
+Hotspot 3
 
-Leertaste für weiter
+bg
 
-Möchten Sie das Spiel beenden?
+logo
 
-Volumen de la música
-
-Diseño
-
-clásico
-
-¿Salir del juego?
-
-¿Seguro que quieres salir?
-
-Paramètres
-
-Réinitialiser
-
-Choisissez une partie à charger
-
-Opções
-
-Volume Música
-
-Disposição
-
-clássica
-
-Voilà, I found a keycard.
+cloud
 
