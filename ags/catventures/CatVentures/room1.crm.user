@@ -247,7 +247,7 @@
         </Items>
       </Hotspots>
       <WalkableAreas>
-        <Visible>True</Visible>
+        <Visible>False</Visible>
         <Locked>False</Locked>
         <Items>
           <Item ID="0000">
@@ -387,7 +387,7 @@
         </Items>
       </WalkBehinds>
       <Regions>
-        <Visible>False</Visible>
+        <Visible>True</Visible>
         <Locked>False</Locked>
         <Items>
           <Item ID="0000">

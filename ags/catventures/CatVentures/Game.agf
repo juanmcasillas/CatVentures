@@ -66,17 +66,17 @@
       <HasMODMusic>False</HasMODMusic>
       <DefaultRoomMaskResolution>1</DefaultRoomMaskResolution>
       <GameExplorerEnabled>False</GameExplorerEnabled>
-      <Description />
-      <ReleaseDate>2007-08-19</ReleaseDate>
+      <Description xml:space="preserve">The Adventures of Firulais &amp; Calcetines</Description>
+      <ReleaseDate>2019-08-19</ReleaseDate>
       <Genre>Adventure</Genre>
       <Version>1.0.0.0</Version>
       <WindowsExperienceIndex>1</WindowsExperienceIndex>
-      <DeveloperName />
+      <DeveloperName xml:space="preserve">Juan M. Casillas</DeveloperName>
       <DeveloperURL />
       <EnhancedSaveGames>False</EnhancedSaveGames>
       <SaveGameFileExtension />
       <SaveGameFolderName>CatVentures</SaveGameFolderName>
-      <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
+      <BinaryFilesInSourceControl>True</BinaryFilesInSourceControl>
       <AudioIndexer>0</AudioIndexer>
       <BuildTargets>Windows</BuildTargets>
       <RenderAtScreenResolution>UserDefined</RenderAtScreenResolution>
@@ -103,7 +103,7 @@
       <CustomSavePath />
       <UseCustomAppDataPath>False</UseCustomAppDataPath>
       <CustomAppDataPath IsNull="True" />
-      <TitleText xml:space="preserve">Tumbleweed Setup</TitleText>
+      <TitleText xml:space="preserve">CatVentures Setup</TitleText>
     </RuntimeSetup>
     <LipSync>
       <Type>None</Type>
