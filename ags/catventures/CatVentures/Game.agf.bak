@@ -2573,8 +2573,8 @@
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
             <StartingRoom>2</StartingRoom>
-            <StartX>93</StartX>
-            <StartY>154</StartY>
+            <StartX>98</StartX>
+            <StartY>153</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
             <MovementSpeed>3</MovementSpeed>
             <MovementSpeedX>0</MovementSpeedX>
@@ -2653,7 +2653,7 @@
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
             <StartingRoom>2</StartingRoom>
-            <StartX>107</StartX>
+            <StartX>151</StartX>
             <StartY>153</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
             <MovementSpeed>3</MovementSpeed>
@@ -2693,7 +2693,7 @@
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
             <StartingRoom>2</StartingRoom>
-            <StartX>151</StartX>
+            <StartX>207</StartX>
             <StartY>153</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
             <MovementSpeed>3</MovementSpeed>
