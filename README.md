@@ -19,3 +19,37 @@ The Cats Adventures. A Point-and-Click Game, using AGS framework
 # text encoding: windows1250 (to get the special spanish chars)
 
 * use thimbleweed theme
+
+
+ # button verb font
+http://www.cheapprofonts.com/Familiar_Pro
+13 pt, crisp
+
+ES
+50x12
+    Abrir
+    Cerrar
+    Dar
+    Empujar
+    Tirar
+    Usar
+56x12
+    Coger
+    Mirar
+    Hablar
+
+50x12
+    Open
+    Close
+    Give
+    Push
+    Pull
+    Use
+56x12
+    Pick Up
+    Look At
+    Talk To
+EN
+
+
+
