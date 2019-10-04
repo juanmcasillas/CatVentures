@@ -698,7 +698,7 @@
                 <Height>12</Height>
                 <Locked>False</Locked>
                 <Width>50</Width>
-                <Left>0</Left>
+                <Left>3</Left>
                 <Top>1</Top>
                 <ZOrder>0</ZOrder>
                 <ID>0</ID>
@@ -722,7 +722,7 @@
                 <Height>12</Height>
                 <Locked>False</Locked>
                 <Width>50</Width>
-                <Left>0</Left>
+                <Left>3</Left>
                 <Top>15</Top>
                 <ZOrder>1</ZOrder>
                 <ID>1</ID>
@@ -746,7 +746,7 @@
                 <Height>12</Height>
                 <Locked>False</Locked>
                 <Width>50</Width>
-                <Left>0</Left>
+                <Left>3</Left>
                 <Top>29</Top>
                 <ZOrder>2</ZOrder>
                 <ID>2</ID>
@@ -6680,7 +6680,7 @@ goto-previous
                 <Sprites>
                   <Sprite Slot="48" Width="36" Height="133" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>D:\dev\CatVentures\assets\sprites\room1\door2_o.png</FileName>
+                      <FileName>D:\dev\CatVentures\assets\sprites\rooms\01\door2_o.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <Frame>0</Frame>
@@ -6697,7 +6697,7 @@ goto-previous
                 <Sprites>
                   <Sprite Slot="49" Width="36" Height="133" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>D:\dev\CatVentures\assets\sprites\room2\door1_o.png</FileName>
+                      <FileName>D:\dev\CatVentures\assets\sprites\rooms\03\door1_o.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <Frame>0</Frame>
@@ -6879,9 +6879,9 @@ goto-previous
               <SpriteFolder Name="intro">
                 <SubFolders />
                 <Sprites>
-                  <Sprite Slot="43" Width="152" Height="68" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                  <Sprite Slot="43" Width="158" Height="68" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>D:\dev\CatVentures\assets\sprites\logo.png</FileName>
+                      <FileName>D:\dev\CatVentures\assets\sprites\rooms\intro\logo.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <Frame>0</Frame>
