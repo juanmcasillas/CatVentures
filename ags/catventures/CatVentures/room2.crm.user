@@ -33,20 +33,27 @@
             <Visible>True</Visible>
             <Locked>False</Locked>
           </Item>
+          <Item ID="0002">
+            <Visible>True</Visible>
+            <Locked>False</Locked>
+          </Item>
+          <Item ID="0003">
+            <Visible>True</Visible>
+            <Locked>False</Locked>
+          </Item>
+          <Item ID="0004">
+            <Visible>True</Visible>
+            <Locked>False</Locked>
+          </Item>
         </Items>
       </Characters>
       <Objects>
         <Visible>True</Visible>
         <Locked>False</Locked>
-        <Items>
-          <Item ID="0000">
-            <Visible>True</Visible>
-            <Locked>False</Locked>
-          </Item>
-        </Items>
+        <Items />
       </Objects>
       <Hotspots>
-        <Visible>True</Visible>
+        <Visible>False</Visible>
         <Locked>False</Locked>
         <Items>
           <Item ID="0000">
@@ -392,7 +399,7 @@
         </Items>
       </WalkBehinds>
       <Regions>
-        <Visible>False</Visible>
+        <Visible>True</Visible>
         <Locked>False</Locked>
         <Items>
           <Item ID="0000">
