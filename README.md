@@ -25,6 +25,8 @@ The Cats Adventures. A Point-and-Click Game, using AGS framework
 http://www.cheapprofonts.com/Familiar_Pro
 13 pt, crisp
 
+Replaced the verbs PickUp and Push so the string "empujar" fits in the middle. `verbgui.asc:1201`
+
 ES
 50x12
     Abrir
