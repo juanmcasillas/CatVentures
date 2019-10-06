@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+     http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  
+  <key attr.name="Name" attr.type="string" for="node" id="k0"/>
+  <key attr.name="Description" attr.type="string" for="node" id="k1"/>
+  <key attr.name="Doors" attr.type="int" for="node" id="k2"/>
+  <key attr.name="Chars" attr.type="string" for="node" id="k3"/>
+  <key attr.name="AGSID" attr.type="int" for="node" id="k4"/>
+  <key attr.name="Type" attr.type="int" for="node" id="k5"/>
+
+  <graph id="G" edgedefault="undirected">
+    
+    <node id="n0">
+      <data key="k0"><![CDATA[Intro]]></data>
+      <data key="k1"><![CDATA[The intro cutscene]]></data>
+      <data key="k2">0</data>
+      <data key="k3"><![CDATA[]]></data>
+      <data key="k4">4</data>
+      <data key="k5">1</data>
+    </node>
+    <edge id="e0" source="n0" target="n1"/>   
+
+    <node id="n1">
+      <data key="k0"><![CDATA[Main Hall]]></data>
+      <data key="k1"><![CDATA[When the game starts]]></data>
+      <data key="k2">2</data>
+      <data key="k3"><![CDATA[Firulais]]></data>
+      <data key="k4">1</data>
+      <data key="k5">0</data>
+    </node>
+
+
+    <node id="n2"/>
+    <node id="n3"/>
+   
+    <node id="n4">
+      <graph id="n4:" edgedefault="undirected">
+          <node id="n4::n0"/>
+          <node id="n4::n1"/>
+          <node id="n4::n2"/>
+          <edge id="n4::e0" source="n4::n0" target="n4::n2"/>
+          <edge id="n4::e1" source="n4::n1" target="n4::n2"/>
+        </graph>
+    </node>
+
+  </graph>
+</graphml>
+
+
