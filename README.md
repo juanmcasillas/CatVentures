@@ -54,4 +54,7 @@ ES
 EN
 
 
+# python roomgen
+
+pip install psd-tools
 
