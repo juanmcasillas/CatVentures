@@ -18,12 +18,16 @@ class BaseObject(Assets):
         self.behind = behind
         self.hotspot = hotspot
 
+    def GetCoords(self):
+        #xpos = self.coords[0]
+        #ypos = self.coords[1]
+        return self.coords
+
     def LoadAssets(self, layers, layer_size=None):
         super().LoadAssets(layers)
 
         img_file = self.res["img"]
-        xpos = self.coords[0]
-        ypos = self.coords[1]
+        xpos,ypos = self.GetCoords()
 
         name = "%s_%s_%s" % (self.name, xpos, ypos)
 
@@ -42,8 +46,7 @@ class BaseObject(Assets):
         src = Image.new("RGBA", mask.size, color=Config.bg_trans)
         img_file = self.res["hotspot"]
         img = Image.open(img_file)
-        xpos = self.coords[0]
-        ypos = self.coords[1]
+        xpos,ypos = self.GetCoords()
         src.paste(img, (xpos, ypos))
         mask = Image.alpha_composite(mask, src)
         return mask
@@ -56,8 +59,7 @@ class BaseObject(Assets):
         src = Image.new("RGBA", mask.size, color=Config.bg_trans)
         img_file = self.res["behind"]
         img = Image.open(img_file)
-        xpos = self.coords[0]
-        ypos = self.coords[1]
+        xpos,ypos = self.GetCoords()
         src.paste(img, (xpos, ypos))
         mask = Image.alpha_composite(mask, src)
         return mask

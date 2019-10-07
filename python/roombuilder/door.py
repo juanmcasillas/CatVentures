@@ -43,16 +43,16 @@ class Door(Assets):
                 "ypos": 146,
             },
         }
-        self.pos = pos
-        self.type = type
+        self.pos = pos.lower()
+        self.type = type.lower()
         self.coords = coords
 
     def LoadAssets(self, layers, layer_size=None):
         super().LoadAssets(layers)
 
-        img_file = self.doors[self.pos.lower()][self.type.lower()]
-        xpos = self.doors[self.pos.lower()]["xpos"]
-        ypos = self.doors[self.pos.lower()]["ypos"]
+        img_file = self.doors[self.pos][self.type]
+        xpos = self.doors[self.pos]["xpos"]
+        ypos = self.doors[self.pos]["ypos"]
 
         name = "door_%s_%s" % (self.pos, self.type)
 
@@ -66,10 +66,10 @@ class Door(Assets):
     def LoadHotSpots(self, mask):
 
         src = Image.new("RGBA", mask.size, color=Config.bg_trans)
-        img_file = self.doors[self.pos.lower()]["hotspot"]
+        img_file = self.doors[self.pos]["hotspot"]
         img = Image.open(img_file)
-        xpos = self.doors[self.pos.lower()]["xpos"]
-        ypos = self.doors[self.pos.lower()]["ypos"]
+        xpos = self.doors[self.pos]["xpos"]
+        ypos = self.doors[self.pos]["ypos"]
         src.paste(img, (xpos, ypos))
         mask = Image.alpha_composite(mask, src)
         return mask
@@ -78,10 +78,10 @@ class Door(Assets):
         "doors only have bottom behinds"
         if "bottom" == self.pos.lower():
             src = Image.new("RGBA", mask.size, color=Config.bg_trans)
-            img_file = self.doors[self.pos.lower()]["behind"]
+            img_file = self.doors[self.pos]["behind"]
             img = Image.open(img_file)
-            xpos = self.doors[self.pos.lower()]["xpos"]
-            ypos = self.doors[self.pos.lower()]["ypos"]
+            xpos = self.doors[self.pos]["xpos"]
+            ypos = self.doors[self.pos]["ypos"]
             src.paste(img, (xpos, ypos))
             mask = Image.alpha_composite(mask, src)
 

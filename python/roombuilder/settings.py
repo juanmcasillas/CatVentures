@@ -11,6 +11,7 @@ class Config:
     basedir = "../assets"
     default_screen_size = (320, 200)
     outdir = "./rooms"
+    verbose = False
     # right options to build a PSD file.
     logfile = "-"
     psd_options = [
@@ -26,13 +27,13 @@ class Config:
     def outputdir(fname):
         return os.sep.join([ Config.outdir, fname])
 
+
 def LoadConfig():
 
     global Config
     global LOG
 
     #Config = type('', (object,), {})()
-
     
     if Config.logfile.lower() != '-':
         # log to file create a new one each run
@@ -45,7 +46,7 @@ def LoadConfig():
     else:
         # to standard output
         logging.basicConfig(format='%(asctime)s [%(levelname)s] %(message)s', 
-                level=logging.DEBUG) # normal: logging.INFO
+                level=logging.INFO) # normal: logging.INFO
 
     LOG = logging.getLogger("roombuilder")
     #

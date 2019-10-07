@@ -6,6 +6,8 @@ import tempfile
 import shutil
 
 from . settings import Config
+from . import settings
+
 
 
 class RoomMaker:
@@ -79,7 +81,7 @@ class RoomMaker:
     def BuildPSD(self, outname):
         layer_dict = {}
         preview_dict = {}
-        print("creating room %s" % outname)
+        settings.LOG.info("creating room %s" % outname)
 
         # create destination directory for this room
 
@@ -91,7 +93,8 @@ class RoomMaker:
 
         # save each layer in one file
         for lname, limg in self.layers:
-            print(" -> creating layer %s" % lname)
+            if Config.verbose:
+                 settings.LOG.info(" -> creating layer %s" % lname)
             layer_dict[lname] = tempfile.NamedTemporaryFile()
             limg.save(layer_dict[lname].name, format="PNG")
             cmd_label = [
@@ -135,8 +138,8 @@ class RoomMaker:
         self.RunCmd(Config.convert, cmd_flatten)
         self.RunCmd(Config.convert, cmd_psd)
 
-        print(" ** written PSD: %s" % outpsd)
-        print(" ** Written PNG: %s" % outpng)
+        settings.LOG.info(" ** written PSD: %s" % outpsd)
+        settings.LOG.info(" ** Written PNG: %s" % outpng)
 
         # build the masks ####
         for lname,limg in self.layers:
@@ -145,7 +148,7 @@ class RoomMaker:
                 img_indexed = img_indexed.convert("P", palette=Image.ADAPTIVE, colors=16)
                 mask_name = "%s/%s_%s.png" % (outdir,outname,lname)
                 img_indexed.save(mask_name)
-                print(" -- written layer: %s" % mask_name)
+                settings.LOG.info(" -- written layer: %s" % mask_name)
 
         
-        print("Done.")
+        settings.LOG.info("Done.")
