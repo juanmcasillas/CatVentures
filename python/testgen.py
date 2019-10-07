@@ -373,6 +373,10 @@ class RoomMaker:
 
 if __name__ == "__main__":
 
+    # TODO
+    # generate each mask individual, in indexed color mode, no transparency. PNG-8 
+    
+
     rm = RoomMaker()
     rm.CreateRoom("first_01", NormalRoomAsset("first"))
 
