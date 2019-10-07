@@ -8,24 +8,7 @@ import tempfile
 import shutil
 
 
-class Config:
-    convert = "/usr/local/bin/convert"
-    bg_color = (255, 255, 255)  # white
-    bg_trans = (0, 0, 0, 0)  # transparent
-    control_color = (0, 0, 0)  # black
-    basedir = "../assets"
-    default_screen_size = (320, 200)
-    # right options to build a PSD file.
 
-    psd_options = [
-        "-depth",
-        "8",
-        "-type",
-        "truecoloralpha",
-        "-set",
-        "colorspace:auto-grayscale",
-        "off",
-    ]
 
 
 class Assets:
@@ -114,7 +97,6 @@ class Door(Assets):
             xpos = self.doors[self.pos.lower()]["xpos"]
             ypos = self.doors[self.pos.lower()]["ypos"]
             src.paste(img, (xpos, ypos))
-            print(mask)
             mask = Image.alpha_composite(mask, src)
 
         return mask
@@ -290,14 +272,7 @@ class RoomMaker:
         # build the PSD file (to edit)
         self.BuildPSD(name)
 
-        # build the masks
-        for lname,limg in self.layers:
-            if lname.startswith("mask_"):
-                img_indexed = limg.convert("RGB") # discard alpha
-                img_indexed = img_indexed.convert("P", palette=Image.ADAPTIVE, colors=16)
-                mask_name = "%s_%s.png" % (name,lname)
-                img_indexed.save(mask_name)
-                print("Written %s" % mask_name)
+     
 
 
     def CreateControl(self, asset):
@@ -333,6 +308,14 @@ class RoomMaker:
         preview_dict = {}
         print("creating room %s" % outname)
 
+        # create destination directory for this room
+
+        outdir = Config.outputdir(outname)
+        outpsd = "%s/%s.psd" % (outdir,outname)
+        outpng = "%s/%s.png" % (outdir,outname)
+        if not os.path.exists(outdir):
+            os.makedirs(outdir)
+
         # save each layer in one file
         for lname, limg in self.layers:
             print(" -> creating layer %s" % lname)
@@ -367,19 +350,32 @@ class RoomMaker:
         files = list(map(lambda x: x.name, list(preview_dict.values())))
         cmd_flatten = files + ["-flatten", flatten.name]
         self.RunCmd(Config.convert, cmd_flatten)
-        shutil.copy(flatten.name,"%s.png" % outname)
+        # preview ####
+        shutil.copy(flatten.name,outpng)
 
         # now, do the rest, with masks
 
         files = list(map(lambda x: x.name, list(layer_dict.values())))
         cmd_flatten = files + ["-flatten", flatten.name]
-        cmd_psd = [flatten.name] + files + Config.psd_options + ["%s.psd" % outname]
+        cmd_psd = [flatten.name] + files + Config.psd_options + [outpsd]
 
         self.RunCmd(Config.convert, cmd_flatten)
         self.RunCmd(Config.convert, cmd_psd)
 
-        print("Written %s.psd" % outname)
-        print("Written %s.png" % outname)
+        print(" ** written PSD: %s" % outpsd)
+        print(" ** Written PNG: %s" % outpng)
+
+        # build the masks ####
+        for lname,limg in self.layers:
+            if lname.startswith("mask_"):
+                img_indexed = limg.convert("RGB") # discard alpha
+                img_indexed = img_indexed.convert("P", palette=Image.ADAPTIVE, colors=16)
+                mask_name = "%s/%s_%s.png" % (outdir,outname,lname)
+                img_indexed.save(mask_name)
+                print(" -- written layer: %s" % mask_name)
+
+        
+        print("Done.")
 
 if __name__ == "__main__":
 
@@ -389,7 +385,7 @@ if __name__ == "__main__":
 
     rm = RoomMaker()
     rm.CreateRoom("first_01", NormalRoomAsset("first"))
-
+   
     room = NormalRoomAsset("second")
     room.AddObject(Door("Front", "FullOpen"))
     room.AddObject(Door("Left", "Open"))
