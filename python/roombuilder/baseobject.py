@@ -28,6 +28,8 @@ class BaseObject(Assets):
 
         img_file = self.res["img"]
         xpos,ypos = self.GetCoords()
+        if xpos < 0: xpos = layer_size[0]+xpos
+        if ypos < 0: ypos = layer_size[1]+ypos
 
         name = "%s_%s_%s" % (self.name, xpos, ypos)
 
@@ -47,6 +49,9 @@ class BaseObject(Assets):
         img_file = self.res["hotspot"]
         img = Image.open(img_file)
         xpos,ypos = self.GetCoords()
+        if xpos < 0: xpos = mask.size[0]+xpos
+        if ypos < 0: ypos = mask.size[1]+ypos
+
         src.paste(img, (xpos, ypos))
         mask = Image.alpha_composite(mask, src)
         return mask
@@ -60,6 +65,9 @@ class BaseObject(Assets):
         img_file = self.res["behind"]
         img = Image.open(img_file)
         xpos,ypos = self.GetCoords()
+        if xpos < 0: xpos = mask.size[0]+xpos
+        if ypos < 0: ypos = mask.size[1]+ypos
+        
         src.paste(img, (xpos, ypos))
         mask = Image.alpha_composite(mask, src)
         return mask

@@ -21,35 +21,50 @@ if __name__ == '__main__':
 
     # working test.
 
+    # empty room
     rm = RoomMaker()
-    #rm.CreateRoom("first_01", NormalRoom("first"))
+    rm.CreateRoom("first_01", NormalRoom("first"))
    
+    # door room
     room = NormalRoom("second")
-    room.AddObject(Door("Front", "FullOpen"))
+    room.AddObject(Door("Front", "FullOpen", coords=(130,12)))
     room.AddObject(Door("Left", "Open"))
     room.AddObject(Door("Right", "Closed"))
-    room.AddObject(Door("Bottom", "Closed"))
+    room.AddObject(Door("Bottom", "Closed", coords=(150,146)))
 
     room.AddObject(PlantBig((20, 100), behind=True, hotspot=False))
     room.AddObject(Radiator((60, 85), behind=False, hotspot=True))
-
     # dummy objects
     room.AddObject(RadiatorBig((183, 85), behind=False, hotspot=False))
     room.AddObject(Plant((250, 90), behind=False, hotspot=False))
+    rm.CreateRoom("second_02", room)
 
-    #rm.CreateRoom("second_02", room)
+    # window small
+    room = NormalRoom("third")
+    room.AddObject(WindowSmall( (55,10), hotspot=False))
+    room.AddObject(WindowSmall( (165,10), hotspot=True, bg=True))
+    rm.CreateRoom("third_03", room)
 
-    # window one
+    # window big
+    room = NormalRoom("fourth")
+    room.AddObject(Window( "left", hotspot=False))
+    room.AddObject(Window( "right", hotspot=True, bg=True))
+    room.AddObject(Window( "front", hotspot=True, bg=True, coords=(55,10)))
+    rm.CreateRoom("fourth_04", room)    
 
-    room_w = NormalRoom("third")
-    room_w.AddObject(WindowSmall( (55,10), hotspot=False))
-    room_w.AddObject(WindowSmall( (165,10), hotspot=True, bg=True))
-    #rm.CreateRoom("third_03", room_w)
+    # long room, doors
+    room = LongRoom("room5")
+    room.AddObject(Door("Front", "FullOpen", coords=(330,12)))
+    room.AddObject(Door("Front", "Open", coords=(130,12)))
+    room.AddObject(Door("Front", "Closed", coords=(230,12)))
+    room.AddObject(Door("Left", "Open"))
+    room.AddObject(Door("Right", "Closed"))
+    room.AddObject(Door("Bottom", "Closed", coords=(250,146)))
+    rm.CreateRoom("five_05", room)
 
-    # window two
-
-    room_w = NormalRoom("fourth")
-    room_w.AddObject(Window( "left", hotspot=False))
-    room_w.AddObject(Window( "right", hotspot=True, bg=True))
-    room_w.AddObject(Window( "front", hotspot=True, bg=True, coords=(55,10)))
-    rm.CreateRoom("fourth_04", room_w)    
+    # long room, windows
+    room = LongRoom("room6")
+    room.AddObject(Window( "left", hotspot=False))
+    room.AddObject(Window( "right", hotspot=True, bg=True))
+    room.AddObject(Window( "front", hotspot=True, bg=True, coords=(55,10)))
+    rm.CreateRoom("five_06", room)

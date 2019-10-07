@@ -6,3 +6,4 @@ class Assets:
 
     def LoadAssets(self, layers, layer_size=None):
         pass
+

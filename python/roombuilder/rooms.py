@@ -34,3 +34,12 @@ class NormalRoom(Assets):
         for o in self.objects:
             mask = o.LoadBehinds(mask)
         return mask
+
+class LongRoom(NormalRoom):
+    def __init__(self, name):
+        super().__init__(name)
+       
+        self.persp = os.path.join(self.basedir, "room_templates/long/persp.png")
+        self.walkable = os.path.join(self.basedir, "room_templates/long/walkable.png")
+        self.size = (520, 200)
+    

@@ -20,6 +20,8 @@ class WindowBase(BaseObject):
 
         img_file = self.res[bg_res]
         xpos,ypos = self.GetCoords()
+        if xpos < 0: xpos = layer_size[0]+xpos
+        if ypos < 0: ypos = layer_size[1]+ypos
 
         name = "%s_%s_%s_%s" % (self.name, bg_res, xpos, ypos)
 
@@ -73,7 +75,7 @@ class Window(WindowBase):
                 "bg": os.path.join(self.basedir, "windows/right/right_window_bg.png"),
                 "bgnone": os.path.join(self.basedir, "windows/right/right_window_bg_white.png"),
                 "hotspot": os.path.join(self.basedir, "windows/right/right_window_hotspot.png"),
-                "xpos": 276,
+                "xpos": -44, # relative to the 320 window. crap.
                 "ypos": 20,                
             },
         }
@@ -89,6 +91,7 @@ class Window(WindowBase):
         if "xpos" in self.res.keys():
             xpos = self.res["xpos"]
             ypos = self.res["ypos"]
+            
             return (xpos,ypos)
         else:
             return self.coords
