@@ -290,6 +290,16 @@ class RoomMaker:
         # build the PSD file (to edit)
         self.BuildPSD(name)
 
+        # build the masks
+        for lname,limg in self.layers:
+            if lname.startswith("mask_"):
+                img_indexed = limg.convert("RGB") # discard alpha
+                img_indexed = img_indexed.convert("P", palette=Image.ADAPTIVE, colors=16)
+                mask_name = "%s_%s.png" % (name,lname)
+                img_indexed.save(mask_name)
+                print("Written %s" % mask_name)
+
+
     def CreateControl(self, asset):
         "creates the box for the verbs in the bottom of the screen"
         img = Image.new("RGBA", asset.size, color=Config.bg_trans)
