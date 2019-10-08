@@ -2,6 +2,7 @@
 
 import argparse
 import os
+import sys
 
 from roombuilder import *
 
@@ -11,7 +12,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument("-v", "--verbose", help="Show data about file and processing", action="count")
-    #parser.add_argument("config_file", help="configuration file")
+    parser.add_argument("gamemap", help="GRAPHML map with the rooms")
     args = parser.parse_args()
 
     settings.LoadConfig()
@@ -19,6 +20,11 @@ if __name__ == '__main__':
     if args.verbose:
         settings.Config.verbose = True
 
+    gmap = Parser().ParseFile(args.gamemap)
+    Parser.Print(gmap)         
+
+
+    sys.exit(0)
     # working test.
 
     # empty room

@@ -5,3 +5,4 @@ from . radiators import RadiatorBig, Radiator
 from . rooms import NormalRoom, LongRoom
 from . windows import WindowSmall, Window
 from . roommaker import RoomMaker 
+from . graphmlparser import Parser

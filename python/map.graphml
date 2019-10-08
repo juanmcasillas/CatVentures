@@ -16,16 +16,16 @@
   <graph id="G" edgedefault="undirected">
 
     <node id="room_intro">
-      <data key="name"><![CDATA[Intro]]></data>
-      <data key="desc"><![CDATA[The intro cutscene]]></data>
+      <data key="name">Intro</data>
+      <data key="desc">The intro cutscene</data>
       <data key="id">4</data>
       <data key="type">intro</data>
     </node>
     <edge id="4:0:1" source="room_intro" target="room_01"/>
 
     <node id="room_01">
-      <data key="name"><![CDATA[Main Hall]]></data>
-      <data key="desc"><![CDATA[When the game starts]]></data>
+      <data key="name">Main Hall</data>
+      <data key="desc">When the game starts</data>
       <data key="id">1</data>
       <data key="type">normal</data>
 
@@ -36,7 +36,7 @@
       <data key="doors">
         <door id="1" position="left" type="FullOpen"/>
         <door id="2" position="right" type="Closed"/>
-        <door id="3" position="front" type="Open"/>
+        <door id="3" position="front" type="Open" x="50" y="10" />
       </data>
 
       <data key="windows">
@@ -47,8 +47,8 @@
     <edge id="1:3:3" source="room_01" target="room_03"/>
 
     <node id="room_02">
-      <data key="name"><![CDATA[Long One]]></data>
-      <data key="desc"><![CDATA[The long room]]></data>
+      <data key="name">Long One</data>
+      <data key="desc">The long room</data>
       <data key="id">2</data>
       <data key="type">normal</data>
 
@@ -64,14 +64,14 @@
         <window id="1" position="left" bg="true" hotspot="true"/>
       </data>
       <data key="objects">
-        <plantbig x="100" y="100" hotspot="true"/>
-        <radiator x="200" y="100"/>
+        <object type="plantbig" id="1" x="100" y="100" hotspot="true" behind="true"/>
+        <object type="radiator" id="2" x="200" y="100"/>
       </data>
     </node>
 
     <node id="room_03">
-      <data key="name"><![CDATA[Goal]]></data>
-      <data key="desc"><![CDATA[The goal]]></data>
+      <data key="name">Goal</data>
+      <data key="desc">The goal</data>
       <data key="id">3</data>
       <data key="type">normal</data>
 
@@ -81,7 +81,7 @@
       </data>
 
       <data key="doors">
-        <door id="1" position="left" type="Closed"/>
+        <door id="1" position="left" type="FullOpen"/>
       </data>
 
       <data key="windows">
@@ -89,17 +89,7 @@
       </data>
     </node>
 
-    <!-- demos for graphML -->
-    <node id="n3"/>
-    <node id="n4">
-      <graph id="n4:" edgedefault="undirected">
-        <node id="n4::n0"/>
-        <node id="n4::n1"/>
-        <node id="n4::n2"/>
-        <edge id="n4::e0" source="n4::n0" target="n4::n2"/>
-        <edge id="n4::e1" source="n4::n1" target="n4::n2"/>
-      </graph>
-    </node>
+
 
   </graph>
 </graphml>
