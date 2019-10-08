@@ -36,12 +36,21 @@
       <data key="doors">
         <door id="1" position="left" type="FullOpen"/>
         <door id="2" position="right" type="Closed"/>
-        <door id="3" position="front" type="Open" x="50" y="10" />
+        <door id="3" position="front" type="Open" xpos="130" ypos="12" />
+        <door id="3" position="bottom" type="Closed" xpos="150" ypos="146" />
       </data>
 
       <data key="windows">
-        <window id="1" position="front" x="50" y="10" bg="false"/>
+        <window id="1" type="small" position="front" xpos="60" ypos="20"/>
+        <window id="2" type="small" position="front" xpos="200" ypos="20" bg="true" hotspot="true"/>
       </data>
+
+      <data key="objects">
+        <object type="plantbig" id="1" xpos="20" ypos="100" hotspot="false" behind="true"/>
+        <object type="plant" id="1" xpos="250" ypos="90"/>
+        <object type="radiator" id="2" xpos="60" ypos="85" hotspot="true"/>
+      </data>
+    
     </node>
     <edge id="1:1:2" source="room_01" target="room_02"/>
     <edge id="1:3:3" source="room_01" target="room_03"/>
@@ -50,7 +59,7 @@
       <data key="name">Long One</data>
       <data key="desc">The long room</data>
       <data key="id">2</data>
-      <data key="type">normal</data>
+      <data key="type">long</data>
 
       <data key="chars">
         <char id="Calcetines" state="idle"></char>
@@ -61,11 +70,12 @@
       </data>
 
       <data key="windows">
-        <window id="1" position="left" bg="true" hotspot="true"/>
-      </data>
+        <window id="1" position="left" hotspot="true"/>
+        <window id="2" position="front" hotspot="true" bg="true" xpos="55" ypos="10"/>
+        </data>
       <data key="objects">
-        <object type="plantbig" id="1" x="100" y="100" hotspot="true" behind="true"/>
-        <object type="radiator" id="2" x="200" y="100"/>
+        <object type="plantbig" id="1" xpos="200" ypos="100" hotspot="true" behind="true"/>
+        <object type="radiatorbig" id="2" xpos="300" ypos="85"/>
       </data>
     </node>
 
@@ -86,6 +96,7 @@
 
       <data key="windows">
         <window id="1" position="right" bg="true" hotspot="true"/>
+        <window id="2" position="front" hotspot="false" bg="true" xpos="55" ypos="10"/>
       </data>
     </node>
 

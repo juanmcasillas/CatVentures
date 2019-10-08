@@ -22,7 +22,7 @@ class Parser:
         # </node>
         for node in obj.node:
             room = type('', (object,), {})()
-            room.iid = node['id']
+            room.iid = node['id'].lower()
             for k in self.key_containers:
                 room.__dict__[k] = []
             for d in node.data:
@@ -34,7 +34,7 @@ class Parser:
                     if d['key'] == "objects": room.objects = self.parseObjects(d)
 
                 else:
-                    room.__dict__[d['key']] = d.cdata
+                    room.__dict__[d['key']] = d.cdata.lower()
             GameMap.rooms.append(room)
 
         return GameMap
@@ -48,8 +48,8 @@ class Parser:
         ret = []
         for c in root.char:
             char = type('', (object,), {})()
-            char.id = c['id']
-            char.state = c['state']
+            char.id = c['id'].capitalize()
+            char.state = c['state'].lower()
             ret.append(char)
         return ret
         
@@ -62,17 +62,19 @@ class Parser:
             <door id="3" position="front" type="Open" x="50" y="10" />
         </data>
         """
+        coord_doors = ["front", "bottom"]
+
         ret = []
         for d in root.door:
             door = type('', (object,), {})()
             door.id = d['id']
-            door.type = d['type']
-            door.position = d['position']
+            door.type = d['type'].lower()
+            door.position = d['position'].lower()
             door.xpos = 0
             door.ypos = 0
-            if door.position == "front":
-                door.xpos = d['x']
-                door.ypos = d['y']
+            if door.position in coord_doors:
+                door.xpos = int(d['xpos'])
+                door.ypos = int(d['ypos'])
             ret.append(door)
         return ret
         
@@ -89,19 +91,23 @@ class Parser:
         for w in root.window:
             window = type('', (object,), {})()
             window.id = w['id']
-
+            window.type = "normal"
+            
             for k in booleans:
                 window.__dict__[k] = False
                
                 if k in w._attributes.keys() and w[k].lower() == "true": 
                     window.__dict__[k] = True
 
-            window.position = w['position']
+            if "type" in w._attributes.keys():
+                window.type = w["type"].lower()
+
+            window.position = w['position'].lower()
             window.xpos = 0
             window.ypos = 0
             if window.position == "front":
-                window.xpos = w['x']
-                window.ypos = w['y']
+                window.xpos = int(w['xpos'])
+                window.ypos = int(w['ypos'])
 
             ret.append(window)
         return ret
@@ -119,9 +125,9 @@ class Parser:
         for o in root.object:
             obj = type('', (object,), {})()
             obj.id = o['id']
-            obj.type = o['type']
-            obj.xpos = o['x']
-            obj.ypos = o['y']
+            obj.type = o['type'].lower()
+            obj.xpos = int(o['xpos'])
+            obj.ypos = int(o['ypos'])
 
             for k in booleans:
                 obj.__dict__[k] = False
@@ -146,7 +152,7 @@ class Parser:
                 print("  * id:", d.id, "type:", d.type, "position:", d.position, "xpos:", d.xpos, "ypos:", d.ypos)
             print(" -> windows")
             for w in r.windows:
-                print("  * id:", w.id, "hotspot:", w.hotspot, "bg:", w.bg, "position:", w.position, "xpos:", w.xpos, "ypos:", w.ypos)                
+                print("  * id:", w.id, "hotspot:", w.hotspot, "bg:", w.bg, "type:", w.type, "position:", w.position, "xpos:", w.xpos, "ypos:", w.ypos)                
             print(" -> objects")
             for o in r.objects:
                 print("  * id:", o.id, "type:", o.type, "hotspot:", o.hotspot, "behind:", o.behind, "xpos:", o.xpos, "ypos:", o.ypos)                

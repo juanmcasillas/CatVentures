@@ -1,6 +1,7 @@
 import os
 import os.path
 
+from . settings import Config
 from . baseobject import BaseObject
 
 class PlantBig(BaseObject):
@@ -22,3 +23,7 @@ class Plant(BaseObject):
             "behind": os.path.join(self.basedir, "furniture/plant_behind.png"),
         }
         self.name = "plant"
+
+## add the objects to the factory
+Config.objectFactory['plantbig'] = PlantBig
+Config.objectFactory['plant'] = Plant        

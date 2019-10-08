@@ -1,6 +1,7 @@
 import os
 import os.path
 
+from . settings import Config
 from . baseobject import BaseObject
 
 class RadiatorBig(BaseObject):
@@ -22,3 +23,7 @@ class Radiator(BaseObject):
             "behind": os.path.join(self.basedir, "furniture/radiator_behind.png"),
         }
         self.name = "radiator"
+
+## add the objects to the factory
+Config.objectFactory['radiatorbig'] = RadiatorBig
+Config.objectFactory['radiator'] = Radiator                

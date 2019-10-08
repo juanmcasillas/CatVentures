@@ -14,6 +14,7 @@ class Config:
     verbose = False
     # right options to build a PSD file.
     logfile = "-"
+    objectFactory = {}
     psd_options = [
         "-depth",
         "8",
@@ -32,6 +33,7 @@ def LoadConfig():
 
     global Config
     global LOG
+
 
     #Config = type('', (object,), {})()
     
