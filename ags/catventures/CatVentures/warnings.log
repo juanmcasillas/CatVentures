@@ -1,1 +1,1 @@
-Script : (room:3)[G 592] Dynamic sprite 295 was never deleted
+Script : (room:3)[R 32] Wait() was used in Player Enters Screen - use Enters Screen After Fadein instead

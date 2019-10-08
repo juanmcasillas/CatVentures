@@ -99,6 +99,8 @@ struct CatVentures {
 	//int VariableName;
   bool playersGUIEnabled;
   int playersRunning;
+  
+  int GAME_STATE;
 	// Public Static Methods
 	//import static function FunctionNameStatic ();
 
@@ -112,6 +114,9 @@ struct CatVentures {
 
   import void EnablePlayersGUI();
   import void DisablePlayersGUI();
+  
+  import void SetNormalView(Character *c, int view=0);
+  import void SetIdleView(Character *c, int view=0);
 	// Private Data
 	//protected int variable_name_protected;
 
