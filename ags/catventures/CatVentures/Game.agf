@@ -6879,7 +6879,7 @@ goto-previous
               <SpriteFolder Name="intro">
                 <SubFolders />
                 <Sprites>
-                  <Sprite Slot="43" Width="158" Height="68" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                  <Sprite Slot="43" Width="164" Height="90" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
                       <FileName>D:\dev\CatVentures\assets\sprites\rooms\intro\logo.png</FileName>
                       <OffsetX>0</OffsetX>
@@ -8268,16 +8268,16 @@ goto-previous
         <BackwardsCompatibilityType>True</BackwardsCompatibilityType>
       </AudioClipType>
       <AudioClipType>
-        <Name>Music</Name>
         <TypeID>2</TypeID>
+        <Name>Music</Name>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>30</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
         <BackwardsCompatibilityType>True</BackwardsCompatibilityType>
       </AudioClipType>
       <AudioClipType>
-        <Name>Sound</Name>
         <TypeID>3</TypeID>
+        <Name>Sound</Name>
         <MaxChannels>0</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
