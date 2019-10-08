@@ -75,7 +75,10 @@
         </data>
       <data key="objects">
         <object type="plantbig" id="1" xpos="200" ypos="100" hotspot="true" behind="true"/>
-        <object type="radiatorbig" id="2" xpos="300" ypos="85"/>
+        <object type="radiatorbig" id="2" xpos="250" ypos="85"/>
+        
+        <object type="picturemm" id="3" xpos="280" ypos="20" hotspot="true"/>
+        <object type="pictureguybrush" id="4" xpos="370" ypos="20" hotspot="true"/>
       </data>
     </node>
 
@@ -98,6 +101,12 @@
         <window id="1" position="right" bg="true" hotspot="true"/>
         <window id="2" position="front" hotspot="false" bg="true" xpos="55" ypos="10"/>
       </data>
+
+      <data key="objects">
+        <object type="picturealley" id="1" xpos="180" ypos="20" hotspot="true"/>
+         <object type="plant" id="2" xpos="250" ypos="85"/>
+      </data>
+
     </node>
 
 
