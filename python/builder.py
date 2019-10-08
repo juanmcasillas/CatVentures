@@ -26,6 +26,10 @@ if __name__ == '__main__':
     rm = RoomMaker()
     rooms = []
 
+    # explore the map, and build the rooms,
+    # adding the different elements to be
+    # rendered
+
     for i in range(len(gmap.rooms)):
         room = gmap.rooms[i]
         r = None
@@ -48,59 +52,11 @@ if __name__ == '__main__':
 
         gmap.rooms[i].room_m = r
 
+    #
+    # generate the PSD and PNG files, if the room exists (e.g. cutscenes are not generated)
+    #
 
     for i in range(len(gmap.rooms)):
         room = gmap.rooms[i]
         if "room_m" in room.__dict__.keys() and room.room_m != None:
             rm.CreateRoom(room.iid, room.room_m)
-
-    sys.exit(0)
-    # working test.
-
-    # empty room
-    rm = RoomMaker()
-    rm.CreateRoom("first_01", NormalRoom("first"))
-   
-    # door room
-    room = NormalRoom("second")
-    room.AddObject(Door("Front", "FullOpen", coords=(130,12)))
-    room.AddObject(Door("Left", "Open"))
-    room.AddObject(Door("Right", "Closed"))
-    room.AddObject(Door("Bottom", "Closed", coords=(150,146)))
-
-    room.AddObject(PlantBig((20, 100), behind=True, hotspot=False))
-    room.AddObject(Radiator((60, 85), behind=False, hotspot=True))
-    # dummy objects
-    room.AddObject(RadiatorBig((183, 85), behind=False, hotspot=False))
-    room.AddObject(Plant((250, 90), behind=False, hotspot=False))
-    rm.CreateRoom("second_02", room)
-
-    # window small
-    room = NormalRoom("third")
-    room.AddObject(WindowSmall( (55,10), hotspot=False))
-    room.AddObject(WindowSmall( (165,10), hotspot=True, bg=True))
-    rm.CreateRoom("third_03", room)
-
-    # window big
-    room = NormalRoom("fourth")
-    room.AddObject(Window( "left", hotspot=False))
-    room.AddObject(Window( "right", hotspot=True, bg=True))
-    room.AddObject(Window( "front", hotspot=True, bg=True, coords=(55,10)))
-    rm.CreateRoom("fourth_04", room)    
-
-    # long room, doors
-    room = LongRoom("room5")
-    room.AddObject(Door("Front", "FullOpen", coords=(330,12)))
-    room.AddObject(Door("Front", "Open", coords=(130,12)))
-    room.AddObject(Door("Front", "Closed", coords=(230,12)))
-    room.AddObject(Door("Left", "Open"))
-    room.AddObject(Door("Right", "Closed"))
-    room.AddObject(Door("Bottom", "Closed", coords=(250,146)))
-    rm.CreateRoom("five_05", room)
-
-    # long room, windows
-    room = LongRoom("room6")
-    room.AddObject(Window( "left", hotspot=False))
-    room.AddObject(Window( "right", hotspot=True, bg=True))
-    room.AddObject(Window( "front", hotspot=True, bg=True, coords=(55,10)))
-    rm.CreateRoom("five_06", room)
