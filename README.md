@@ -27,6 +27,7 @@ http://www.cheapprofonts.com/Familiar_Pro
 
 Replaced the verbs PickUp and Push so the string "empujar" fits in the middle. `verbgui.asc:1201`
 
+```
 ES
 50x12
     Abrir
@@ -52,9 +53,10 @@ ES
     Look At
     Talk To
 EN
-
+```
 
 # python roomgen
 
-pip install psd-tools
+created a simple framework that builds the rooms for you, from an XML file (GraphML) that can be visualized
+by any tool (e.g yEd). The XML parser uses `untangle` a decent and fast XML->Obj tool.
 
