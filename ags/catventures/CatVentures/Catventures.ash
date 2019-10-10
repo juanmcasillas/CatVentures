@@ -40,7 +40,7 @@
 // of this module.  
 //-------------------------------------------------------------------
 #define CAT_DEBUG 1
-#define CAT_NOINTRO 1
+//#define CAT_NOINTRO 1
 
 #define CAT_PLAYER1_NAME		"Firulais"
 #define CAT_PLAYER2_NAME		"Calcetines"
