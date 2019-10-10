@@ -40,7 +40,11 @@
 // of this module.  
 //-------------------------------------------------------------------
 #define CAT_DEBUG 1
-//#define CAT_NOINTRO 1
+#define CAT_NOINTRO 1
+
+// game options.
+// Avoid looking things from far away (player goes to the hotspot)
+#define CATGAME_GOTOLOOKAT 1
 
 #define CAT_PLAYER1_NAME		"Firulais"
 #define CAT_PLAYER2_NAME		"Calcetines"
@@ -118,6 +122,9 @@ struct CatVentures {
   
   import void SetNormalView(Character *c, int view=0);
   import void SetIdleView(Character *c, int view=0);
+  
+  import int GoToLookAt(String message);
+  
 	// Private Data
 	//protected int variable_name_protected;
 
