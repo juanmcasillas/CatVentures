@@ -39,8 +39,9 @@
 // The following constant definitions are used to modify the behavior
 // of this module.  
 //-------------------------------------------------------------------
-#define CAT_DEBUG 1
-#define CAT_NOINTRO 1
+//Also change the Global Settings to Avoid Ctrl-X and so on.
+//#define CAT_DEBUG 1
+//#define CAT_NOINTRO 1
 
 // game options.
 // Avoid looking things from far away (player goes to the hotspot)
@@ -107,6 +108,9 @@ struct CatVentures {
 	//int VariableName;
   bool playersGUIEnabled;
   int playersRunning;
+  
+  // Quests
+  bool QuestForRat; // Calcetines ask Firulais the Rat
   
   int GAME_STATE;
 	// Public Static Methods

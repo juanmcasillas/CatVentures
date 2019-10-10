@@ -660,6 +660,10 @@
             <Number>5</Number>
             <Description xml:space="preserve">House Outside Map</Description>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>6</Number>
+            <Description xml:space="preserve">Ending Room</Description>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2603,7 +2607,7 @@
             <MovementSpeedY>0</MovementSpeedY>
             <AnimationDelay>4</AnimationDelay>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
+            <SpeechColor>50688</SpeechColor>
             <Solid>True</Solid>
             <Clickable>True</Clickable>
             <UseRoomAreaScaling>True</UseRoomAreaScaling>
@@ -2841,15 +2845,13 @@
 @S  // Dialog startup entry point
 return
 @1
-Calcetines: it's sunny and clear. As always.
-Firulais: you're the joy of the vegetable garden.
-option-off-forever 1
+Calcetines: Purr Purr Purr Purr
+Firulais: Miau Miau Miau
+//option-off-forever 1
 return
 @2
-Calcetines: sleeping, as ususal.
-Firulais: I'm hungry.
-//Narrator: eh eh
-Calcetines: Try to steal something.
+Calcetines: Umm, trying to sleep?
+Firulais: Typical
 return
 @3
 Calcetines: Where?
@@ -2866,31 +2868,46 @@ Firulais: Behind you!
   Wait(40); // 40 -> 1 second
   cCalcetines.FaceCharacter(cFirulais);
  
-Calcetines: You're pulling my leg. Not funny.
+Calcetines: Not funny.
 option-off 3
 return
 @4
-Calcetines: Try to push some things, maybe it opens.
-option-off 4
-return
-@5
-Calcetines: I think so
+Calcetines: you go OUTSIDE?
 goto-dialog dDialog2
+@5
+Calcetines: What a RAT!!
+Calcetines: Looks tasty
+  aRatSqueak.Play();
+Rat: Eeeeeek!!!
+Calcetines: Ok I'' go with you to check that box.
+Calcetines: I will eat the rat later.
+  aRatSqueak.Play();
+Rat: Eeeeeek!!!
+Firulais: Let's go!
+  Wait(20);
+Firulais: by the way...  
+Firulais: You can change the cat using the top-right catmenu or keys 1,2,3,4
+ CatGame.AddPlayer(CAT_PLAYER2_ID); // be friends
+ cCalcetines.AddInventory(iRat);
+ player.LoseInventory(iRat); 
+option-off-forever 4
+option-off-forever 5
+stop
 @6
-Calcetines: Take care.
+Calcetines: Bye.
   cCalcetines.ChangeView(2); // sleep again
 stop
 ]]></Script>
             <DialogOptions>
               <DialogOption>
                 <ID>1</ID>
-                <Text xml:space="preserve">What a good day!</Text>
+                <Text xml:space="preserve">Miau Miau Miau</Text>
                 <Show>True</Show>
                 <Say>True</Say>
               </DialogOption>
               <DialogOption>
                 <ID>2</ID>
-                <Text xml:space="preserve">What are you doing</Text>
+                <Text xml:space="preserve">What are you doing?</Text>
                 <Show>True</Show>
                 <Say>True</Say>
               </DialogOption>
@@ -2902,15 +2919,15 @@ stop
               </DialogOption>
               <DialogOption>
                 <ID>4</ID>
-                <Text xml:space="preserve">Btw, I can't open door, any ideas?</Text>
+                <Text xml:space="preserve">Have you seen the big rat in the garden?</Text>
                 <Show>True</Show>
                 <Say>True</Say>
               </DialogOption>
               <DialogOption>
                 <ID>5</ID>
-                <Text xml:space="preserve">I think some strange happens here</Text>
-                <Show>True</Show>
-                <Say>True</Say>
+                <Text xml:space="preserve">Here is the rat!</Text>
+                <Show>False</Show>
+                <Say>False</Say>
               </DialogOption>
               <DialogOption>
                 <ID>6</ID>
@@ -2928,23 +2945,28 @@ stop
 @S  // Dialog startup entry point
 return
 @1
-Calcetines: Technically, we can.
-Calcetines: The strange thing is that we can talk as humans!
+Calcetines: Tell me more.
+Firulais: I use a box to climb the window. I can show you.
+Calcetines: Seriously? you? climbing?
+Firulais: Come with me, I'll show you!
+Calcetines: I don't trust you. Take me the rat, and I'll see.
+  CatGame.QuestForRat = true;
 return
 @2
-Calcetines: for sure. Deal.
-  CatGame.AddPlayer(CAT_PLAYER2_ID); // be friends
-option-off-forever 2
-goto-previous
+Calcetines: I'm a cat. I have no friends.
+  //CatGame.AddPlayer(CAT_PLAYER2_ID); // be friends
+//option-off-forever 2
+option-off 2
+return
 @3
 Calcetines: This looks like this game is still on development.
-Calcetines: suspicious.
+Calcetines: Be careful. There are dangling pointers everywhere.
 goto-previous
 ]]></Script>
             <DialogOptions>
               <DialogOption>
                 <ID>1</ID>
-                <Text xml:space="preserve">We can talk!</Text>
+                <Text xml:space="preserve">Well, it's possible to get out the house</Text>
                 <Show>True</Show>
                 <Say>True</Say>
               </DialogOption>

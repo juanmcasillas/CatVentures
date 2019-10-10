@@ -1,1 +1,2 @@
-Script : (room:5)[G 592] Dynamic sprite 307 was never deleted
+Script : (room:5)[R 41] Character.Scaling: cannot set property unless ManualScaling is enabled
+Script : (room:5)[R 45] Character.Scaling: cannot set property unless ManualScaling is enabled
