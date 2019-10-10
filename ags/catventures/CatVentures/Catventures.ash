@@ -63,6 +63,9 @@
 #define CAT_TRUFA_ICON			216		
 
 #define CAT_NUM_PLAYERS         4
+
+#define CAT_RAT_IDLE_VIEW 19
+
 // TODO VIEWS
 
 //===================================================================
