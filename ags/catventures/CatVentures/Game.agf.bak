@@ -77,7 +77,7 @@
       <SaveGameFileExtension />
       <SaveGameFolderName>CatVentures</SaveGameFolderName>
       <BinaryFilesInSourceControl>True</BinaryFilesInSourceControl>
-      <AudioIndexer>0</AudioIndexer>
+      <AudioIndexer>7</AudioIndexer>
       <BuildTargets>Windows</BuildTargets>
       <RenderAtScreenResolution>UserDefined</RenderAtScreenResolution>
     </Settings>
@@ -2340,7 +2340,7 @@
             <HotspotY>0</HotspotY>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <CursorImage>0</CursorImage>
-            <Image>296</Image>
+            <Image>297</Image>
             <Description>KeyRing</Description>
             <Name>iKeys</Name>
             <Properties />
@@ -2547,7 +2547,7 @@
             <UseRoomAreaScaling>True</UseRoomAreaScaling>
             <UseRoomAreaLighting>True</UseRoomAreaLighting>
             <TurnBeforeWalking>True</TurnBeforeWalking>
-            <DiagonalLoops>True</DiagonalLoops>
+            <DiagonalLoops>False</DiagonalLoops>
             <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
             <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
             <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
@@ -2726,7 +2726,7 @@
           <Character>
             <ID>5</ID>
             <ScriptName>cDoorClosed</ScriptName>
-            <RealName xml:space="preserve">New character</RealName>
+            <RealName xml:space="preserve">Door Closed *notshow*</RealName>
             <NormalView>1</NormalView>
             <SpeechView>0</SpeechView>
             <IdleView>0</IdleView>
@@ -2743,7 +2743,7 @@
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
             <Solid>True</Solid>
-            <Clickable>True</Clickable>
+            <Clickable>False</Clickable>
             <UseRoomAreaScaling>True</UseRoomAreaScaling>
             <UseRoomAreaLighting>True</UseRoomAreaLighting>
             <TurnBeforeWalking>True</TurnBeforeWalking>
@@ -6776,6 +6776,18 @@ goto-previous
                       <ImportAlphaChannel>True</ImportAlphaChannel>
                     </Source>
                   </Sprite>
+                  <Sprite Slot="297" Width="31" Height="21" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>D:\dev\CatVentures\assets\misc\keyring_inv.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
                 </Sprites>
               </SpriteFolder>
             </SubFolders>
@@ -8129,6 +8141,120 @@ goto-previous
               </Loop>
             </Loops>
           </View>
+          <View>
+            <ID>18</ID>
+            <Name>vFirulais_Pull</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>10</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>1</ID>
+                    <Image>11</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>12</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>7</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>1</ID>
+                    <Image>8</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>9</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>4</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>1</ID>
+                    <Image>5</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>6</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>1</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>1</ID>
+                    <Image>2</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <ID>2</ID>
+                    <Image>3</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
         </Views>
       </ViewFolder>
     </Views>
@@ -8334,7 +8460,110 @@ goto-previous
             </AudioClipFolder>
           </AudioClipFolder>
           <AudioClipFolder Name="Sounds">
-            <SubFolders />
+            <SubFolders>
+              <AudioClipFolder Name="doors">
+                <SubFolders />
+                <AudioClips>
+                  <AudioClip>
+                    <ID>0</ID>
+                    <SourceFileName>D:\dev\CatVentures\assets\sounds\close_door_1.wav</SourceFileName>
+                    <ScriptName>aDoorClose</ScriptName>
+                    <Index>1</Index>
+                    <Type>3</Type>
+                    <BundlingType>InGameEXE</BundlingType>
+                    <FileType>WAV</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>Inherit</DefaultRepeat>
+                    <FileLastModifiedDate>2019-10-10 07:10:20Z</FileLastModifiedDate>
+                  </AudioClip>
+                  <AudioClip>
+                    <ID>1</ID>
+                    <SourceFileName>D:\dev\CatVentures\assets\sounds\door_slam.wav</SourceFileName>
+                    <ScriptName>aDoorSlam</ScriptName>
+                    <Index>2</Index>
+                    <Type>3</Type>
+                    <BundlingType>InGameEXE</BundlingType>
+                    <FileType>WAV</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>Inherit</DefaultRepeat>
+                    <FileLastModifiedDate>2019-10-10 07:10:20Z</FileLastModifiedDate>
+                  </AudioClip>
+                  <AudioClip>
+                    <ID>2</ID>
+                    <SourceFileName>D:\dev\CatVentures\assets\sounds\open_door_1.wav</SourceFileName>
+                    <ScriptName>aDoorOpen</ScriptName>
+                    <Index>3</Index>
+                    <Type>3</Type>
+                    <BundlingType>InGameEXE</BundlingType>
+                    <FileType>WAV</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>Inherit</DefaultRepeat>
+                    <FileLastModifiedDate>2019-10-10 07:10:20Z</FileLastModifiedDate>
+                  </AudioClip>
+                </AudioClips>
+                <AudioClipFolder>
+                  <DefaultVolume>100</DefaultVolume>
+                  <DefaultPriority>Inherit</DefaultPriority>
+                  <DefaultRepeat>Inherit</DefaultRepeat>
+                  <DefaultBundlingType>InGameEXE</DefaultBundlingType>
+                  <DefaultType>3</DefaultType>
+                </AudioClipFolder>
+              </AudioClipFolder>
+              <AudioClipFolder Name="ambient">
+                <SubFolders />
+                <AudioClips>
+                  <AudioClip>
+                    <ID>3</ID>
+                    <SourceFileName>D:\dev\CatVentures\assets\sounds\picking_keys.wav</SourceFileName>
+                    <ScriptName>aKeyPick</ScriptName>
+                    <Index>4</Index>
+                    <Type>3</Type>
+                    <BundlingType>InGameEXE</BundlingType>
+                    <FileType>WAV</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>Inherit</DefaultRepeat>
+                    <FileLastModifiedDate>2019-10-10 07:38:10Z</FileLastModifiedDate>
+                  </AudioClip>
+                  <AudioClip>
+                    <ID>4</ID>
+                    <SourceFileName>D:\dev\CatVentures\assets\sounds\dragging.wav</SourceFileName>
+                    <ScriptName>aDrag</ScriptName>
+                    <Index>5</Index>
+                    <Type>3</Type>
+                    <BundlingType>InGameEXE</BundlingType>
+                    <FileType>WAV</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>Inherit</DefaultRepeat>
+                    <FileLastModifiedDate>2019-10-10 07:38:10Z</FileLastModifiedDate>
+                  </AudioClip>
+                  <AudioClip>
+                    <ID>5</ID>
+                    <SourceFileName>D:\dev\CatVentures\assets\sounds\open_with_key.wav</SourceFileName>
+                    <ScriptName>aOpenWithKey</ScriptName>
+                    <Index>7</Index>
+                    <Type>3</Type>
+                    <BundlingType>InGameEXE</BundlingType>
+                    <FileType>WAV</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>Inherit</DefaultRepeat>
+                    <FileLastModifiedDate>2019-10-10 10:28:03Z</FileLastModifiedDate>
+                  </AudioClip>
+                </AudioClips>
+                <AudioClipFolder>
+                  <DefaultVolume>100</DefaultVolume>
+                  <DefaultPriority>Inherit</DefaultPriority>
+                  <DefaultRepeat>Inherit</DefaultRepeat>
+                  <DefaultBundlingType>InGameEXE</DefaultBundlingType>
+                  <DefaultType>3</DefaultType>
+                </AudioClipFolder>
+              </AudioClipFolder>
+            </SubFolders>
             <AudioClips />
             <AudioClipFolder>
               <DefaultVolume>100</DefaultVolume>
@@ -8381,11 +8610,7 @@ goto-previous
         <BackwardsCompatibilityType>False</BackwardsCompatibilityType>
       </AudioClipType>
     </AudioClipTypes>
-    <Translations>
-      <Translation>
-        <Name>es</Name>
-      </Translation>
-    </Translations>
+    <Translations />
   </Game>
   <Component Name="FileCommands" />
   <Component Name="BuildCommands" />

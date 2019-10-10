@@ -31,7 +31,7 @@
         <Items />
       </Characters>
       <Objects>
-        <Visible>False</Visible>
+        <Visible>True</Visible>
         <Locked>False</Locked>
         <Items>
           <Item ID="0000">
