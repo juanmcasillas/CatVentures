@@ -656,6 +656,10 @@
             <Number>4</Number>
             <Description>Intro</Description>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>5</Number>
+            <Description xml:space="preserve">House Outside Map</Description>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
