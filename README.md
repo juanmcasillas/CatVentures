@@ -52,13 +52,13 @@ The "main" features of this game are:
    12. Localization (currently only english and spanish)
 
 
-2. [Download](#download)
+# [Download](#download)
 
 The AGS engine runs on **Android, iOS, Linux, Mac OS X, PSP and Windows**. See their [github page](https://github.com/JanetGilbert/ags) for instructions and building. The engine is used to run the game. So if you plan to run this game on that platforms, take a read. 
 
 On **Windows** and **Linux** is pretty straighforward: go to the [Releases Page](https://github.com/juanmcasillas/CatVentures/releases), download the latest binary, and try it, quick, and dirty. In other platforms, you need the engine compiled.
 
-3. [Instructions](#instructions)
+# [Instructions](#instructions)
 
 Just click in the verbs and interact with the objects and characters in the screen :-).
 
