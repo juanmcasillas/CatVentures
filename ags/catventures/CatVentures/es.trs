@@ -16,34 +16,35 @@
 //  
 // ** REMEMBER, WRITE YOUR TRANSLATION IN THE EMPTY LINES, DO
 // ** NOT CHANGE THE EXISTING TEXT.
+// USE ISO-8859-1 for encoding, or special chars won't work
 Miau Miau Miau
 
 What are you doing?
 Qué haces?
 Hey see there, a three-headed monkey
-?Mira! ?un mono con tres cabezas!
+¡Mira! ¡un mono con tres cabezas!
 Have you seen the big rat in the garden?
-?Has visto la rata gigante del jardín?
+¿Has visto la rata gigante del jardín?
 Here is the rat!
-Aquí está la rata!
+¡Aquí está la rata!
 I have things to do. See you later.
 Tengo cosas que hacer. Nos vemos.
 Purr Purr Purr Purr
 
 Umm, trying to sleep?
-Umm, intentando dormir?
+¿Umm, intentando dormir?
 Typical
 Normal
 Where?
-?Dónde?
+¿Dónde?
 Behind you!
-?Detrás de tí!
+¡Detrás de tí!
 Not funny.
 Esto no es gracioso.
 you go OUTSIDE?
-?has podido salir FUERA?
+¿has podido salir FUERA?
 What a RAT!!
-??Vaya RATA!!
+¡¡Vaya RATA!!
 Looks tasty
 Parece sabrosilla
 Eeeeeek!!!
@@ -53,7 +54,7 @@ Vale, iré contigo a ver esa caaaja.
 I will eat the rat later.
 Ya me comeré la rata luego.
 Let's go!
-?Vamos!
+¡Vamos!
 by the way...
 Por cierto...
 You can change the cat using the top-right catmenu or keys 1,2,3,4
@@ -63,17 +64,17 @@ Hasta luego.
 Well, it's possible to get out the house
 Bueno, si que es posible salir fuera
 Do you wanna be my friend?
-?Quieres ser mi amigo?
+¿Quieres ser mi amigo?
 This house looks like a TV set, isn't it?
-?A ti no te parece que esta casa parece un decorado?
+¿A ti no te parece que esta casa parece un decorado?
 Tell me more.
 Cuentame mas.
 I use a box to climb the window. I can show you.
 Me he subido a una caja para trepar a la ventana. Te lo puedo ense?ar.
 Seriously? you? climbing?
-?Anda ya!, ?tu? ?trepando?
+¡Anda ya!, ¿tu? ¿trepando?
 Come with me, I'll show you!
-?Vente, que te lo ense?o!
+¡Vente, que te lo ense?o!
 I don't trust you. Take me the rat, and I'll see.
 No te creo. Traeme la rata y lo vamos viendo.
 I'm a cat. I have no friends.
@@ -515,57 +516,57 @@ Nee
 ;
 
 I can't use that.
-
+No puedo usar eso.
 That won't do any good.
-
+Eso no va a valer para nada.
 Nice %s
-
+Bonito %s
 It's %s
-
+Es %s
 I can't push that.
-
+No puedo empujar eso.
 I can't push %s
-
+No puedo empujar %s
 I can't pull that.
-
+No puedo tirar de eso.
 I can't pull %s
-
+No puedo tirar de %s
 It has already been closed.
-
+Ya está cerrado.
 Doing that with %s is not a good idea.
-
+Hacer eso con %s no es buena idea.
 I can't close that.
-
+No puedo cerrar eso.
 It is open.
-
+Está abierto.
 %s would not like it.
-
+no le va a gustar a %s. 
 I can't open that.
-
+No puedo abrir eso.
 I don't need that.
-
+No necesito eso.
 I don't want to pick %s up.
-
+No quiero cojer %s.
 I have nothing to say.
-
+No tengo nada que decir.
 I don't want to talk to %s.
-
+No quiero hablar con %s.
 I'd rather keep it.
-
+Mejor me lo quedo.
 I can't do that.
-
+No puedo hacer eso.
 The door looks solid.
-
+La puerta parece maciza.
 It is locked.
-
+Está cerrada.
 I can't unlock it with that.
-
+No puedo abrir eso con esto.
 I have to close it first.
-
+Quizás debería cerrarlo primero.
 Now it's unlocked.
-
+Ahora está abierto.
 The door is locked again.
-
+La puerta está cerrada otra vez.
 de
 
 fr
@@ -593,7 +594,7 @@ Parece peligrosa. Mejor me quedo lejos.
 What a ugly (and dangeous) rat
 Vaya rata fea (y peligrosa)
 Have you saved the game? (F5)
-?Has guardado la partida? (F5)
+¿Has guardado la partida? (F5)
 Well... let's go anyway
 Bueno... vamos a ello
 I have to pick it up...
@@ -601,11 +602,11 @@ Tengo que cojerla...
 But I don't wanna be bitten
 Pero sin que me muerda
 Umm... see there! a Flying Monkey!
-Ummm... ?mira! ?un mono volando!
+Ummm... ¡mira! ¡un mono volando!
 Eeeeeekkkkkk??
 
 Rat Taken!!
-?Rata a la saca!
+¡Rata a la saca!
 I need a lock to unlock
 Necesito un cerrojo para usar la llave
 It's a normal keyring with two small keys
@@ -635,7 +636,7 @@ Llavero
 Ugly rat
 Rata fea
 Ey! the key works!
-?Ey! ?Ha funcionado!
+¡Ey! ?Ha funcionado!
 It's a picture of a very familiar cat.
 Es una cuadro de un gato muy conocido.
 In fact, is the first cat that works on a video game
@@ -751,7 +752,7 @@ Mirando fijamente el cuadro, me dan ganas de ser un pirata.
 Looks like a family portrait. Better stay away from basement and swimming pool.
 Parece un retrato de familia. Por si acaso no voy a bajar al sótano ni a la piscina.
 oH-aH! look at that views!
-?Ala! ?mira que vistas!
+¡Ala! ¡mira que vistas!
 Looks like katnip, but tastes badly.
 Parece hierba gatera, pero sabe a rayos.
 Sailor's picture
@@ -765,7 +766,7 @@ Retrato de familia
 *POM*
 
 What a nap! what's that sound?
-?Vaya siesta! ?Qué ha sido ese ruido? 
+¡Vaya siesta! ¿Qué ha sido ese ruido? 
 I forget something
 Se me olvida algo
 The most  beautiful cardboard box in the world. I like boxes
@@ -907,7 +908,7 @@ Thanks for playing!
 Btw, Have you anything to eat?
 
 Small Window>e
-
+Ventana pequeña>e
 Gracias por jugar esta breve demo
 
 Espero que te haya gustado
