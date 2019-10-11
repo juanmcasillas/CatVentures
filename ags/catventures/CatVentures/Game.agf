@@ -8963,7 +8963,11 @@ goto-previous
         <BackwardsCompatibilityType>False</BackwardsCompatibilityType>
       </AudioClipType>
     </AudioClipTypes>
-    <Translations />
+    <Translations>
+      <Translation>
+        <Name>es</Name>
+      </Translation>
+    </Translations>
   </Game>
   <Component Name="FileCommands" />
   <Component Name="BuildCommands" />
