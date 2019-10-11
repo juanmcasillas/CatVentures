@@ -1,1 +1,1 @@
-# THE ADVENTURES OF FIRULAIS AND CALCETINES (starring trufa and Miki)
+# THE ADVENTURES OF FIRULAIS & CALCETINES (with trufa & Miki)

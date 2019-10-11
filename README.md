@@ -155,7 +155,7 @@ Relation between rooms can be defined as nodes, but currently, are not used.
     <edge id="1:3:3" source="room_01" target="room_03"/>
 ```
 
-For each room, it also creates automatically some masks. These masks are created as indexed color `PNG` file, so each color means one object (e.g. color 0 is one element, color 1 another one, and so on). These are the masks:
+For each room, it also creates automatically some masks. These masks are created as indexed color `PNG` file, so each color means one object (e.g. (color 0 (background) means on use on AGS) color 1 is one element, color 2 another one, and so on). These are the masks:
 
 <img src="img/python/room_01_mask_walkable.png">
 
@@ -175,7 +175,29 @@ For each room, it also creates automatically some masks. These masks are created
 
 The script also build a multi-layered **PSD** file, to ease the work for the graphics designer.
 
-Also supports long rooms, big windows (with and without background and lateral positioning)
-
 <img src="img/python/room_02.png">
 <img src="img/python/room_03.png">
+
+Also supports long rooms, big windows (with and without background and lateral positioning) and some things, 
+like plants, pictures and radiators. You can extend your objects easily from the python class, for example,
+the picture object:
+
+```python
+class PictureAlley(BaseObject):
+    def __init__(self, coords, behind=False, hotspot=False):
+        super().__init__(coords,behind,hotspot)
+        self.res = {
+            "img": os.path.join(self.basedir, "pictures/picture_alley.png"),
+            "hotspot": os.path.join(self.basedir, "pictures/picture_alley_hotspot.png"),
+        }
+        self.name = "PictureAlley"
+```
+
+# LICENSES
+
+TrueType font display uses ALFont by Javier Gonzalez and the Freetype project. Distributed under the terms of the FreeType project license.
+
+OGG player is alogg by Javier Gonzalez, using the Ogg Vorbis decoder, which is available from http://www.xiph.org/ Copyright (c) 2002, Xiph.org Foundation
+
+MP3 player is almp3, by Javier Gonzalez and the FreeAmp team. It uses the mpg123 MP3 decoder, and is distributed under the terms of the GNU Lesser General Public License version 2.1.
+
