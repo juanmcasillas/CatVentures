@@ -3,7 +3,7 @@
 <AGSEditorUserData Version="3.0.2.1" VersionIndex="3" EditorVersion="3.5.0">
   <Component Name="SourceControl" />
   <WorkspaceState>
-    <LastBuildConfiguration>Debug</LastBuildConfiguration>
+    <LastBuildConfiguration>Release</LastBuildConfiguration>
     <LastBuildGameFileName>DataFile=CatVentures,Windows=CatVentures,_Debug=CatVentures,Linux=CatVentures,</LastBuildGameFileName>
   </WorkspaceState>
 </AGSEditorUserData>

@@ -31,7 +31,7 @@
       <InventoryHotspotMarkerCrosshairColor>0</InventoryHotspotMarkerCrosshairColor>
       <WalkInLookMode>False</WalkInLookMode>
       <AntiGlideMode>True</AntiGlideMode>
-      <DebugMode>True</DebugMode>
+      <DebugMode>False</DebugMode>
       <InventoryCursors>False</InventoryCursors>
       <HandleInvClicksInScript>True</HandleInvClicksInScript>
       <DisplayMultipleInventory>False</DisplayMultipleInventory>
@@ -78,7 +78,7 @@
       <SaveGameFolderName>CatVentures</SaveGameFolderName>
       <BinaryFilesInSourceControl>True</BinaryFilesInSourceControl>
       <AudioIndexer>16</AudioIndexer>
-      <BuildTargets>Windows</BuildTargets>
+      <BuildTargets xml:space="preserve">Windows, Linux</BuildTargets>
       <RenderAtScreenResolution>UserDefined</RenderAtScreenResolution>
     </Settings>
     <RuntimeSetup>
@@ -95,7 +95,7 @@
       <DigitalSound>Default</DigitalSound>
       <MidiSound>Default</MidiSound>
       <UseVoicePack>True</UseVoicePack>
-      <Translation />
+      <Translation>es</Translation>
       <AutoLockMouse>False</AutoLockMouse>
       <MouseSpeed>1</MouseSpeed>
       <SpriteCacheSize>128</SpriteCacheSize>
@@ -2879,13 +2879,13 @@ Calcetines: What a RAT!!
 Calcetines: Looks tasty
   aRatSqueak.Play();
 Rat: Eeeeeek!!!
-Calcetines: Ok I'' go with you to check that box.
+Calcetines: Ok I'll go with you to check that box.
 Calcetines: I will eat the rat later.
   aRatSqueak.Play();
 Rat: Eeeeeek!!!
 Firulais: Let's go!
   Wait(20);
-Firulais: by the way...  
+Firulais: by the way...
 Firulais: You can change the cat using the top-right catmenu or keys 1,2,3,4
  CatGame.AddPlayer(CAT_PLAYER2_ID); // be friends
  cCalcetines.AddInventory(iRat);
