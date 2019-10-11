@@ -112,6 +112,10 @@ struct CatVentures {
   // Quests
   bool QuestForRat; // Calcetines ask Firulais the Rat
   
+  // Screeenshot
+  String screenshot_template;
+  int screenshot_counter;
+  
   int GAME_STATE;
 	// Public Static Methods
 	//import static function FunctionNameStatic ();
@@ -131,7 +135,7 @@ struct CatVentures {
   import void SetIdleView(Character *c, int view=0);
   
   import int GoToLookAt(String message);
-  
+  import int TakeScreenShot();
 	// Private Data
 	//protected int variable_name_protected;
 
