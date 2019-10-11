@@ -6,10 +6,9 @@ plot is very simple: some cats live in a house, and they have to do things, just
 <img src="img/game/game1.png"/>
 <img src="img/game/game2.png"/>
 <img src="img/game/game4_es.png"/>
-<img src="img/game/game5_es.png"/>
 <img src="img/game/game6_es.png"/>
-<img src="img/game/game3.png"/>
 <img src="img/game/game7_es.png"/>
+<img src="img/game/game5_es.png"/>
 
 
 This project uses [AGS (Adventure Game Studio)](https://www.adventuregamestudio.co.uk) as development framework. AGS has two parts, the **engine** that runs on Windows, MacOS, Linux, PSP (among others) and the **editor** that sadly, only runs on Windows, but they are trying to refactor all the code and do it more portable. I use the latest version available, **3.5.0**.
