@@ -98,6 +98,9 @@ There are two active regions:
 | Mouse wheel     | scrolls the dialogs |
 | Left button     | primary action (e.g. walk) |
 | Right button    | secondary action (e.g. take) |
+|||
+| Double click on doors | exit automatically |
+| Double click on floor | walks quickly |
 
 <br/>
 <br/>
