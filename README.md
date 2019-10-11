@@ -54,9 +54,12 @@ The "main" features of this game are:
 
 # [Download](#download)
 
-The AGS engine runs on **Android, iOS, Linux, Mac OS X, PSP and Windows**. See their [github page](https://github.com/JanetGilbert/ags) for instructions and building. The engine is used to run the game. So if you plan to run this game on that platforms, take a read. 
+The AGS engine runs on **Android, iOS, Linux, Mac OS X, PSP and Windows**. See their [github page](https://github.com/JanetGilbert/ags) for instructions and building. The engine is used to run the game. So if you plan to run this game on that platforms, take a read. On **Windows** and **Linux** is pretty straighforward: go to the [Releases Page](https://github.com/juanmcasillas/CatVentures/releases), download the latest binary, and run it (it's an executable), 
+quick, and dirty. In other platforms, you need the engine compiled.
 
-On **Windows** and **Linux** is pretty straighforward: go to the [Releases Page](https://github.com/juanmcasillas/CatVentures/releases), download the latest binary, and try it, quick, and dirty. In other platforms, you need the engine compiled.
+* [Windows Version, Spanish](https://github.com/juanmcasillas/CatVentures/releases/download/1.0.0/catventures-win-1_0_0-Spanish.zip)
+* [Windows Version, English](https://github.com/juanmcasillas/CatVentures/releases/download/1.0.0/catventures-win-1_0_0-English.zip)
+* [Linux Version, Multilang](https://github.com/juanmcasillas/CatVentures/releases/download/1.0.0/catventures-linux-1_0_0-Multilang.zip)
 
 # [Instructions](#instructions)
 
